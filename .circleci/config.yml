@@ -1,21 +1,21 @@
-version: 2.1
-
-orbs:
-  python: circleci/python@0.2.1
-
+version: 2
 jobs:
-  build-and-test:
-    executor: python/default
+  build:
+    working_directory: ~/circleci-demo-python-django
+    docker:
+      - image: circleci/python:3.6.4
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
       - run:
-          command: ./manage.py test
-          name: Test
-
-workflows:
-  main:
-    jobs:
-      - build-and-test
+          command: |
+            pip install django
+            pip install coverage==3.6
+            pip install django-crispy-forms
+            pip install Pillow
+            pip install whitenoise
+      - run:
+          command: |
+            echo "Hello"
+destination: tr1
