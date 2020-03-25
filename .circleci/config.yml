@@ -17,5 +17,8 @@ jobs:
             pip install whitenoise
       - run:
           command: |
-            echo "Hello"
+            cd serw_med
+            python manage.py makemigrations
+            python manage.py migrate
+            echo "hello"
 destination: tr1
