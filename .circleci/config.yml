@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/circleci-demo-python-django
+    docker:
+      - image: circleci/python:3.6.4
+    steps:
+      - checkout
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
+      - run:
+          command: |
+            pip install django
+            pip install coverage==3.6
+            pip install django-crispy-forms
+            pip install Pillow
+            pip install whitenoise
+      - run:
+          command: |
+            echo "Hello"
+destination: tr1
