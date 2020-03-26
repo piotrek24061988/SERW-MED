@@ -20,5 +20,6 @@ jobs:
             cd serw_med
             python manage.py makemigrations
             python manage.py migrate
-            echo "hello"
+            coverage run --omit=manage.py manage.py test news.tests
+            coverage report
 destination: tr1
