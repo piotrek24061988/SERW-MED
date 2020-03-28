@@ -24,5 +24,3 @@ jobs:
             coverage run --omit=manage.py manage.py test news.tests
             coverage report
 destination: tr1
-
-django_heroku.settings(locals())
