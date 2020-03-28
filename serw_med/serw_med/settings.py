@@ -122,4 +122,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-django_heroku.settings(locals())
+# Check if running Heroku or other host
+if "#66-Ubuntu SMP Thu Jan 30 13:49:40 UTC 2020" in str(os.uname()):
+    django_heroku.settings(locals())

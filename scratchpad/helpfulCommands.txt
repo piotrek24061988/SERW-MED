@@ -8,7 +8,7 @@ heroku releases
 heroku rollback v15
 heroku login
 #to create superuser
-heroku run bash
+heroku run bash --app serw-med
 python3 serw_med/manage.py makemigrations
 python3 serw_med/manage.py migrate
 python3 serw_med/manage.py createsuperuser

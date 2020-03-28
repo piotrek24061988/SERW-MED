@@ -23,4 +23,4 @@ jobs:
             python manage.py migrate
             coverage run --omit=manage.py manage.py test news.tests
             coverage report
-destination: tr1
+destination: tr1l
