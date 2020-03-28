@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 posts = [
     {
@@ -23,8 +22,7 @@ class SerwMed:
 
     @staticmethod
     def news(request):
-        context = {'posts': posts}
-        return render(request, 'news.html', context)
+        return render(request, 'news.html', {'posts': posts})
 
     @staticmethod
     def about(request):
