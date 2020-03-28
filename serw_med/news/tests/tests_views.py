@@ -36,7 +36,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_contact(self):
         # Setup
-        response_content = b'SERW-MED CONTACT'
+        response_content = b'Serwis Aparatury Medycznej SERW-MED'
         # Run
         response = views.SerwMed.contact(NewsViewsTestCases.request)
         # Check

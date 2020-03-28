@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +51,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="118">
-              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+              <caret line="16" column="111" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/news/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,24 +86,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="422" selection-start-line="422" selection-end-line="422" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scratchpad/djangoCommands.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="103" selection-start-column="103" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -129,7 +132,6 @@
         <option value="$PROJECT_DIR$/serw_med/news/templates/gallery.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/news.html" />
         <option value="$PROJECT_DIR$/serw_med/news/views.py" />
-        <option value="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" />
         <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
         <option value="$PROJECT_DIR$/serw_med/serw_med/urls.py" />
@@ -140,6 +142,7 @@
         <option value="$PROJECT_DIR$/serw_med/serw_med/settings.py" />
         <option value="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/contact.html" />
+        <option value="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" />
       </list>
     </option>
   </component>
@@ -369,16 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/templates/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -400,13 +393,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -489,7 +475,24 @@
     <entry file="file://$PROJECT_DIR$/serw_med/news/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
-          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+          <caret line="16" column="111" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
