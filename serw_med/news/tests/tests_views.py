@@ -3,7 +3,7 @@ from .. import views
 
 
 class NewsViewsTestCases(unittest.TestCase):
-    # Common Setup
+    # Common setup
     request = 'fake request'
     response_status = 200
 
