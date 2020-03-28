@@ -1,6 +1,81 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1>SERW-MED CONTACT</h1>
+  <!-- Contact Us Section -->
+    <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">Skontaktuj się z nami!</h1>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <div class="find-widget">
+                    Firma:  <a href="https://hostriver.ro">Serwis Aparatury Medycznes SERW-MED Wiesława Górecka</a>
+                </div>
+                <div class="find-widget">
+                    Adres: <a href="#">Bielicka 8/13 85-307 Bydgoszcz</a>
+                </div>
+                <div class="find-widget">
+                    Telefon:  <a href="#">601 658 690</a>
+                </div>
+
+                <div class="find-widget">
+                    Strona internetowa:  <a href="https://serw-med.herokuapp.com">https://serw-med.herokuapp.com</a>
+                </div>
+                <div class="find-widget">
+                    Email: <a href="#">wieslawagorecka1953@gmail.com</a>
+                </div>
+                  <div class="find-widget">
+                    NIP: <a href="#">9531756238</a>
+                </div>
+                  <div class="find-widget">
+                    REGON: <a href="#">385787674</a>
+                </div>
+                  <div class="find-widget">
+                    Bank: <a href="#">ING Bank Śląski S.A. 33 1050 1139 1000 0097 2756 3901</a>
+                </div>
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Imię i nazwisko</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Proszę wprowadzić imię i nazwisko">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Proszę wprowadzić email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Temat</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Proszę podać temat">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Wiadomość</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Proszę wpisać treść wiadmomości"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
 
 {% endblock %}
