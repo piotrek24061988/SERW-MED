@@ -5,3 +5,6 @@ heroku local web
 heroku open
 heroku config:set
 heroku rollback v15
+heroku login
+heroku run python serw_med/manage.py migrate --app serw-med
+heroku run python serw_med/manage.py createsuperuser --app serw-med
