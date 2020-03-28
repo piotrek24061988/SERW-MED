@@ -15,6 +15,7 @@ jobs:
             pip install django-crispy-forms
             pip install Pillow
             pip install whitenoise
+            pip install django-heroku
       - run:
           command: |
             cd serw_med
@@ -23,3 +24,5 @@ jobs:
             coverage run --omit=manage.py manage.py test news.tests
             coverage report
 destination: tr1
+
+django_heroku.settings(locals())

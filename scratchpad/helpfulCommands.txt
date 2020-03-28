@@ -4,7 +4,11 @@ heroku logs --tail
 heroku local web
 heroku open
 heroku config:set
+heroku releases
 heroku rollback v15
 heroku login
-heroku run python serw_med/manage.py migrate --app serw-med
-heroku run python serw_med/manage.py createsuperuser --app serw-med
+#to create superuser
+heroku run bash
+python3 serw_med/manage.py makemigrations
+python3 serw_med/manage.py migrate
+python3 serw_med/manage.py createsuperuser
