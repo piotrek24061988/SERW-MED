@@ -12,3 +12,6 @@ heroku run bash --app serw-med
 python3 serw_med/manage.py makemigrations
 python3 serw_med/manage.py migrate
 python3 serw_med/manage.py createsuperuser
+
+#to reset heroku database
+heroku pg:reset DATABASE --app serw-med

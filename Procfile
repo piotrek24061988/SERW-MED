@@ -1,1 +1,1 @@
-web: cd serw_med && rm db.sqlite3 && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py test news.tests && gunicorn serw_med.wsgi --log-file -
+web: cd serw_med && rm python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py test news.tests && gunicorn serw_med.wsgi --log-file -
