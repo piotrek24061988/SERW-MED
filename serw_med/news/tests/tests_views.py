@@ -9,7 +9,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_news(self):
         # Setup
-        response_content = b'PiotrG'
+        response_content = b'News user'
         # Run
         response = views.SerwMed.news(NewsViewsTestCases.request)
         # Check

@@ -7,3 +7,4 @@ python3 manage.py createsuperuser
 python3 manage.py startapp appname
 python3 manage.py test example.tests
 python3 manage.py collectstatic
+python3 manage.py sqlmigrate news 0001 # python3 manage.py sqlmigrate appname migration_number

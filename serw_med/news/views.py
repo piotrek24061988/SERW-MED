@@ -1,19 +1,5 @@
 from django.shortcuts import render
-
-posts = [
-    {
-        'author': 'PiotrG',
-        'title': 'News1',
-        'content': 'First news content',
-        'date_posted': '27.03.2020'
-    },
-    {
-        'author': 'JerzyG',
-        'title': 'News2',
-        'content': 'Second news content',
-        'date_posted': '27.03.2020'
-    }
-]
+from .models import News
 
 
 class SerwMed:
@@ -22,7 +8,7 @@ class SerwMed:
 
     @staticmethod
     def news(request):
-        return render(request, 'news.html', {'posts': posts})
+        return render(request, 'news.html', {'newses': News.objects.all()})
 
     @staticmethod
     def about(request):
