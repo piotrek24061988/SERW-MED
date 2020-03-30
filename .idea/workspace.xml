@@ -66,8 +66,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+            <state relative-caret-position="204">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,7 +116,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="118" />
     <option name="y" value="43" />
-    <option name="width" value="1754" />
+    <option name="width" value="1751" />
     <option name="height" value="902" />
   </component>
   <component name="ProjectView">
@@ -209,10 +212,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="43" width="1754" height="902" extended-state="0" />
+    <frame x="118" y="43" width="1751" height="902" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26343155" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2638889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -439,13 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
-          <folding>
-            <element signature="e#309#318#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="172">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -456,10 +456,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="298">
+          <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,8 +478,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+        <state relative-caret-position="204">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

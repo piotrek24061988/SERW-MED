@@ -1,6 +1,6 @@
 import unittest
-from .. import models
 from django.contrib.auth.models import User
+from .. import models
 
 
 class NewsModelsTestCases(unittest.TestCase):
@@ -18,6 +18,8 @@ class NewsModelsTestCases(unittest.TestCase):
             testUsername = 'News user' + str(i)
             testTitle = 'News title' + str(i)
             testContent = 'News content' + str(i)
+            user = None
+            news = None
             # Run
             if not User.objects.filter(email=testUsername + '@gmail.com').exists():
                 user = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
@@ -27,8 +29,16 @@ class NewsModelsTestCases(unittest.TestCase):
             # Check
             self.assertEqual(response, user)
             # Run
-            news = models.News(title=testTitle, content=testContent, author_id=i)
-            news.save()
-            # Check
-            self.assertEqual(testTitle, models.News.objects.last().title)
-            self.assertEqual(testContent, models.News.objects.last().content)
+            if not models.News.objects.filter(content=testContent).exists():
+                # Run
+                news = models.News(title=testTitle, content=testContent, author_id=i)
+                news.save()
+                # Check
+                self.assertEqual(testTitle, models.News.objects.last().title)
+                self.assertEqual(testContent, models.News.objects.last().content)
+            else:
+                # Run
+                news = models.News.objects.filter(title=testTitle).first()
+                # Check
+                self.assertEqual(testTitle, news.title)
+                self.assertEqual(testContent, news.content)
