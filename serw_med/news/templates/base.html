@@ -37,8 +37,13 @@
 
                         <!-- Navbar Right Side -->
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="#">Login</a>
-                            <a class="nav-item nav-link" href="{% url 'serw-med-register' %}">Register</a>
+                            {% if user.is_authenticated %}
+                                <a class="nav-item nav-link" href="{% url 'serw-med-profile' %}">Profil</a>
+                                <a class="nav-item nav-link" href="{% url 'serw-med-logout' %}">Wylogowanie</a>
+                            {% else %}
+                                <a class="nav-item nav-link" href="{% url 'serw-med-login' %}">Logowanie</a>
+                                <a class="nav-item nav-link" href="{% url 'serw-med-register' %}">Rejestracja</a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

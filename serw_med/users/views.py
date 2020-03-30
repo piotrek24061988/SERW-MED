@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 
 class SerwMedUsers:
@@ -14,9 +15,14 @@ class SerwMedUsers:
                 form.save()
                 username = form.cleaned_data.get('username')
                 messages.success(request, f'Konto dla {username} utworzone')
-                return redirect('serw-med-about')
+                return redirect('serw-med-login')
         else:
             form = UserRegisterForm()
         return render(request, 'register.html', {'form': form})
+
+    @staticmethod
+    @login_required
+    def profile(request):
+        return render(request, 'profile.html')
 
 

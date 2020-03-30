@@ -36,3 +36,14 @@ class UsersViewsTestCases(unittest.TestCase):
         # Check
         self.assertEqual(response.status_code, response_status)
         self.assertIn(response_content, response.content)
+
+    def test_profile_post(self):
+        # Setup
+        request = RequestStub
+        response_status = 200
+        response_content = b'Profil'
+        # Run
+        response = views.SerwMedUsers.profile(request)
+        # Check
+        self.assertEqual(response.status_code, response_status)
+        self.assertIn(response_content, response.content)

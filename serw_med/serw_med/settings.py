@@ -128,6 +128,10 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
+LOGIN_REDIRECT_URL = 'serw-med-about'
+LOGIN_URL = 'serw-med-login'
+
+
 # Check if running Heroku or other host
 if "#66-Ubuntu SMP Thu Jan 30 13:49:40 UTC 2020" in str(os.uname()):
     django_heroku.settings(locals())
