@@ -19,7 +19,10 @@ class NewsModelsTestCases(unittest.TestCase):
             testTitle = 'News title' + str(i)
             testContent = 'News content' + str(i)
             # Run
-            user = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
+            if not User.objects.filter(email=testUsername + '@gmail.com').exists():
+                user = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
+            else:
+                user = User.objects.get(username=testUsername)
             response = User.objects.filter(username=testUsername).first()
             # Check
             self.assertEqual(response, user)
