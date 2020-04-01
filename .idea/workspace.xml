@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/media/profile_pics/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/media/profile_pics/DefaultMan.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="78">
+              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -28,22 +28,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="165">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/media/profile_pics/default.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/users/templates/profile.html">
+        <entry file="file://$PROJECT_DIR$/scratchpad/djangoCommands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="120">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -51,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="265">
               <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
             </state>
           </provider>
@@ -60,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="195">
               <caret line="32" column="80" lean-forward="true" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
@@ -201,6 +196,19 @@
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="profile_pics" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -252,9 +260,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="424" y="29" width="1422" height="857" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30021444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30021444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -265,7 +272,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.51648355" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.51648355" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32861635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -463,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/djangoCommands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -568,40 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/media/profile_pics/default.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/static/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="80" lean-forward="true" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,10 +612,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/djangoCommands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="32" column="80" lean-forward="true" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/media/profile_pics/DefaultMan.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="165">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
         </state>
       </provider>
     </entry>
