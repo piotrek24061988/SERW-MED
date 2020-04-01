@@ -9,7 +9,7 @@ class UsersModelsTestCases(unittest.TestCase):
         testUsername = 'UsersTestProfile1'
         testUser = None
         testProfile = None
-        imageUrl = 'profile_pics/default.jpg'
+        imageUrl = 'profile_pics/DefaultMan.jpg'
         imageUrlPrefix = '/media/'
         # Run
         if not User.objects.filter(email=testUsername + '@gmail.com').exists():
@@ -34,7 +34,7 @@ class UsersModelsTestCases(unittest.TestCase):
         testUsername = 'UsersTestProfile2'
         testUser = None
         testProfile = None
-        imageUrl = 'profile_pics/default.jpg'
+        imageUrl = 'profile_pics/DefaultMan.jpg'
         profileStr = 'Profile'
         # Run
         if not User.objects.filter(email=testUsername + '@gmail.com').exists():
