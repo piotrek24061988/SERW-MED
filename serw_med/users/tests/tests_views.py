@@ -43,7 +43,7 @@ class UsersViewsTestCases(unittest.TestCase):
         response_status = 200
         response_content = b'Profil'
         # Run
-        #response = views.SerwMedUsers.profile(request)
+        response = views.SerwMedUsers.profile(request)
         # Check
-        #self.assertEqual(response.status_code, response_status)
-        #self.assertIn(response_content, response.content)
+        self.assertEqual(response.status_code, response_status)
+        self.assertIn(response_content, response.content)
