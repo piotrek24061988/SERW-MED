@@ -21,7 +21,7 @@ class NewsModelsTestCases(unittest.TestCase):
             user = None
             news = None
             # Run
-            if not User.objects.filter(email=testUsername + '@gmail.com').exists():
+            if not User.objects.filter(username=testUsername).exists():
                 user = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
             else:
                 user = User.objects.get(username=testUsername)
@@ -29,7 +29,7 @@ class NewsModelsTestCases(unittest.TestCase):
             # Check
             self.assertEqual(response, user)
             # Run
-            if not models.News.objects.filter(content=testContent).exists():
+            if not models.News.objects.filter(title=testTitle).exists():
                 # Run
                 news = models.News(title=testTitle, content=testContent, author_id=i)
                 news.save()
@@ -41,4 +41,3 @@ class NewsModelsTestCases(unittest.TestCase):
                 news = models.News.objects.filter(title=testTitle).first()
                 # Check
                 self.assertEqual(testTitle, news.title)
-                self.assertEqual(testContent, news.content)

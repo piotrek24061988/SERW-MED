@@ -12,7 +12,7 @@ class UsersModelsTestCases(unittest.TestCase):
         imageUrl = 'profile_pics/DefaultMan.jpg'
         imageUrlPrefix = '/media/'
         # Run
-        if not User.objects.filter(email=testUsername + '@gmail.com').exists():
+        if not User.objects.filter(username=testUsername).exists():
             testUser = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
         else:
             testUser = User.objects.get(username=testUsername)
@@ -23,11 +23,12 @@ class UsersModelsTestCases(unittest.TestCase):
         if not models.Profile.objects.filter(user=testUser).exists():
             testProfile = models.Profile(user=testUser, image=imageUrl)
             testProfile.save()
+            # Check
+            self.assertEqual(imageUrlPrefix + imageUrl, testUser.profile.image.url)
         else:
             testProfile = models.Profile.objects.get(user=testUser)
         # Check
         self.assertEqual(testProfile, testUser.profile)
-        self.assertEqual(imageUrlPrefix + imageUrl, testUser.profile.image.url)
 
     def test_str(self):
         # Setup
@@ -37,7 +38,7 @@ class UsersModelsTestCases(unittest.TestCase):
         imageUrl = 'profile_pics/DefaultMan.jpg'
         profileStr = 'Profile'
         # Run
-        if not User.objects.filter(email=testUsername + '@gmail.com').exists():
+        if not User.objects.filter(username=testUsername).exists():
             testUser = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
         else:
             testUser = User.objects.get(username=testUsername)
