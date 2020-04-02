@@ -1,1 +1,3 @@
-1) Obslugiwanie blednych url dodac - news/urls.py
+2) Poprawic to zeby manipulacje na stronie nie wywalaly testow
+2) Obslugiwanie blednych url dodac - news/urls.py
+3) jezyk angielski na polski np w file input
