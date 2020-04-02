@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.utils.translation import gettext_lazy as _
 from .models import Profile
+from django.forms.widgets import ClearableFileInput
 
 
 class UserRegisterForm(UserCreationForm):
@@ -25,8 +26,13 @@ class UserUpdateForm(forms.ModelForm):
         fields = ['username', 'email']
 
 
+class MyClearableFileInput(ClearableFileInput):
+    initial_text = 'aktualnie'
+    input_text = 'zmień na'
+
+
 class ProfileUpdateForm(forms.ModelForm):
-    image = forms.ImageField(label=_("Zdjęcie"))
+    image = forms.ImageField(label=_("Zdjęcie"), widget=MyClearableFileInput) #required=False,
 
     class Meta:
         model = Profile

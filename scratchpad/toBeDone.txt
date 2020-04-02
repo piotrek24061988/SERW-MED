@@ -1,2 +1,1 @@
-2) Jezyk polski dodac - users/forms.py ProfileUpdateForm
-3) Obslugiwanie blednych url dodac - news/urls.py
+1) Obslugiwanie blednych url dodac - news/urls.py
