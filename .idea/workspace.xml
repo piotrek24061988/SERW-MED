@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/serw_med/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +12,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/users/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+              <folding>
+                <element signature="e#309#318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/users/templates/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -56,7 +98,6 @@
         <option value="$PROJECT_DIR$/serw_med/users/templates/register.html" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/login.html" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/logout.html" />
-        <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
         <option value="$PROJECT_DIR$/serw_med/serw_med/settings.py" />
         <option value="$PROJECT_DIR$/serw_med/users/admin.py" />
         <option value="$PROJECT_DIR$/serw_med/news/admin.py" />
@@ -78,12 +119,13 @@
         <option value="$PROJECT_DIR$/serw_med/users/tests/tests_models.py" />
         <option value="$PROJECT_DIR$/serw_med/news/tests/tests_models.py" />
         <option value="$PROJECT_DIR$/serw_med/users/models.py" />
+        <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="446" />
-    <option name="y" value="93" />
+    <option name="x" value="286" />
+    <option name="y" value="74" />
     <option name="width" value="1421" />
     <option name="height" value="857" />
   </component>
@@ -138,26 +180,26 @@
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,15 +214,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/serw_med/media/profile_pics" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/serw_med/media/profile_pics" />
       <recent name="$PROJECT_DIR$/serw_med/news/templates" />
       <recent name="$PROJECT_DIR$/serw_med/news/tests" />
       <recent name="$PROJECT_DIR$/scratchpad" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/serw_med/media" />
+      <recent name="$PROJECT_DIR$/serw_med/media/profile_pics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -209,10 +252,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="446" y="93" width="1421" height="857" extended-state="0" />
+    <frame x="286" y="74" width="1421" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.29613733" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.28397712" />
       <window_info id="Structure" order="1" sideWeight="0.50153846" side_tool="true" weight="0.29529244" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/serw_med/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -424,16 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/users/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/signals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -448,16 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="132" column="37" lean-forward="true" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-          <folding>
-            <element signature="e#309#318#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/users/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -608,13 +617,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/users/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/users/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        <state relative-caret-position="135">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
         </state>
       </provider>
     </entry>
