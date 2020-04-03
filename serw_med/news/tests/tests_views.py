@@ -7,15 +7,6 @@ class NewsViewsTestCases(unittest.TestCase):
     request = 'fake request'
     response_status = 200
 
-    def test_news(self):
-        # Setup
-        response_content = b'News user'
-        # Run
-        response = views.SerwMed.news(NewsViewsTestCases.request)
-        # Check
-        self.assertEqual(response.status_code, NewsViewsTestCases.response_status)
-        self.assertIn(response_content, response.content)
-
     def test_about(self):
         # Setup
         response_content = b'News1'
