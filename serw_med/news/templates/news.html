@@ -13,6 +13,9 @@
                     <small class="text-muted">{{ news.date_posted|date:"d F Y" }}</small>
                 </div>
                 <h2><a class="article-title" href="{% url 'serw-med-news-detail' news.id %}">{{ news.title }}</a></h2>
+                {% if news.image %}
+                    <img class="rounded news-img" src="{{ news.image.url }}">
+                {% endif %}
                 <p class="article-content">{{ news.content }}</p>
             </div>
         </article>
