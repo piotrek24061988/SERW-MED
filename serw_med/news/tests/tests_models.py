@@ -65,8 +65,13 @@ class NewsModelsTestCases(unittest.TestCase):
             # Run
             for oneNewsJson in newsJson:
                 if oneNewsJson['user'] == usernameJson['user']:
-                    post = models.News(title=oneNewsJson['title'], content=oneNewsJson['content'], author_id=user.id)
-                    post.save()
-                    # Check
-                    self.assertEqual(oneNewsJson['title'], models.News.objects.last().title)
-                    self.assertEqual(oneNewsJson['content'], models.News.objects.last().content)
+                    if not models.News.objects.filter(title=oneNewsJson['title']).exists():
+                        post = models.News(title=oneNewsJson['title'], content=oneNewsJson['content'], author_id=user.id)
+                        post.save()
+                        # Check
+                        self.assertEqual(oneNewsJson['title'], models.News.objects.last().title)
+                        self.assertEqual(oneNewsJson['content'], models.News.objects.last().content)
+                    else:
+                        post = models.News.objects.filter(title=oneNewsJson['title']).first()
+                        # Check
+                        self.assertEqual(oneNewsJson['title'], post.title)

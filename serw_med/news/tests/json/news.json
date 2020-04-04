@@ -24,54 +24,89 @@
     "content": "To jest piąta testowa wiadomość.",
     "user": "NewsJsonUser1"
   },
-    {
+  {
     "title": "Szósta testowa wiadomość",
     "content": "To jest szósta testowa wiadomość.",
     "user": "NewsJsonUser2"
   },
-    {
+  {
     "title": "Siódma testowa wiadomość",
     "content": "To jest siódma testowa wiadomość.",
     "user": "NewsJsonUser2"
   },
-    {
+  {
     "title": "Ósma testowa wiadomość",
     "content": "To jest ósma testowa wiadomość.",
     "user": "NewsJsonUser2"
   },
-    {
+  {
     "title": "Dziewiąta testowa wiadomość",
     "content": "To jest dziewiąta testowa wiadomość.",
     "user": "NewsJsonUser2"
   },
-    {
+  {
     "title": "Dziesiąta testowa wiadomość",
     "content": "To jest dziesiąta testowa wiadomość.",
     "user": "NewsJsonUser2"
   },
-    {
+  {
     "title": "Jedenasta testowa wiadomość",
     "content": "To jest jedenasta testowa wiadomość.",
     "user": "NewsJsonUser3"
   },
-    {
+  {
     "title": "Dwunasta testowa wiadomość",
     "content": "To jest dwunasta testowa wiadomość.",
     "user": "NewsJsonUser3"
   },
-    {
+  {
     "title": "Trzynasta testowa wiadomość",
     "content": "To jest trzynasta testowa wiadomość.",
     "user": "NewsJsonUser3"
   },
-    {
+  {
     "title": "Czternasta testowa wiadomość",
     "content": "To jest czternasta testowa wiadomość.",
     "user": "NewsJsonUser3"
   },
-    {
+  {
     "title": "Piętnasta testowa wiadomość",
     "content": "To jest piętnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+  {
+    "title": "Szesnasta testowa wiadomość",
+    "content": "To jest szesnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Szesnasta testowa wiadomość",
+    "content": "To jest szesnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Siedemnasta testowa wiadomość",
+    "content": "To jest siedemnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Osiemnasta testowa wiadomość",
+    "content": "To jest osiemnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Dziewiętnasta testowa wiadomość",
+    "content": "To jest dziewiętnasta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Dwudziesta testowa wiadomość",
+    "content": "To jest dwidziesta testowa wiadomość.",
+    "user": "NewsJsonUser3"
+  },
+    {
+    "title": "Dwudziesta pierwsza testowa wiadomość",
+    "content": "To jest dwudziesta pierwsza testowa wiadomość.",
     "user": "NewsJsonUser3"
   }
 ]

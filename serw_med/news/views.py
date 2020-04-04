@@ -10,6 +10,7 @@ class NewsListView(ListView):
     template_name = 'news.html'
     context_object_name = 'newses'
     ordering = ['-date_posted']
+    paginate_by = 10
 
 
 class NewsDetailView(DetailView):
