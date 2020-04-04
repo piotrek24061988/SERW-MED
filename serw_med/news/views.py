@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.models import User
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import News
 from .forms import NewsCreateForm
@@ -11,6 +12,17 @@ class NewsListView(ListView):
     context_object_name = 'newses'
     ordering = ['-date_posted']
     paginate_by = 10
+
+
+class UserNewsListView(ListView):
+    model = News
+    template_name = 'news.html'
+    context_object_name = 'newses'
+    paginate_by = 10
+
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return News.objects.filter(author=user).order_by('-date_posted')
 
 
 class NewsDetailView(DetailView):

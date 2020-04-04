@@ -1,11 +1,12 @@
 from django.urls import path
 #from django.conf.urls import url
 from . import views
-from .views import NewsListView, NewsDetailView, NewsCreateView, NewsUpdateView
+from .views import NewsListView, UserNewsListView, NewsDetailView, NewsCreateView, NewsUpdateView
 
 urlpatterns = [
     path('', views.SerwMed.about, name='serw-med-about'),
     path('news/', views.NewsListView.as_view(), name='serw-med-news'),
+    path('news/<username>', views.UserNewsListView.as_view(), name='serw-med-news-user'),
     path('news/<int:pk>/', views.NewsDetailView.as_view(), name='serw-med-news-detail'),
     path('news/new/', views.NewsCreateView.as_view(), name='serw-med-news-create'),
     path('news/<int:pk>/update/', views.NewsUpdateView.as_view(), name='serw-med-news-update'),
