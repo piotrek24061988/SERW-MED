@@ -1,2 +1,3 @@
 0) Obslugiwanie blednych url dodac - news/urls.py
 1) jezyk angielski na polski np w file input
+3) zrobic porządek z plikami css
