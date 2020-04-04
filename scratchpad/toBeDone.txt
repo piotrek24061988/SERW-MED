@@ -1,2 +1,2 @@
-1) Obslugiwanie blednych url dodac - news/urls.py
-2) jezyk angielski na polski np w file input
+0) Obslugiwanie blednych url dodac - news/urls.py
+1) jezyk angielski na polski np w file input
