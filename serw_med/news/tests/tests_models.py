@@ -1,4 +1,4 @@
-import unittest
+import unittest, json
 from django.contrib.auth.models import User
 from .. import models
 
@@ -41,3 +41,32 @@ class NewsModelsTestCases(unittest.TestCase):
                 news = models.News.objects.filter(title=testTitle).first()
                 # Check
                 self.assertEqual(testTitle, news.title)
+
+    def test_json_post(self):
+        # Setup
+        usernamesJson = None
+        newsJson = None
+        user = None
+        response = None
+        # Run
+        with open('news/tests/json/users.json') as f:
+            usernamesJson = json.load(f)
+        with open('news/tests/json/news.json') as f:
+            newsJson = json.load(f)
+        # Run
+        for usernameJson in usernamesJson:
+            if not User.objects.filter(username=usernameJson['user']).exists():
+                user = User.objects.create_user(usernameJson['user'], usernameJson['user'] + '@gmail.com', '1234')
+            else:
+                user = User.objects.get(username=usernameJson['user'])
+            response = User.objects.filter(username=usernameJson['user']).first()
+            # Check
+            self.assertEqual(response, user)
+            # Run
+            for oneNewsJson in newsJson:
+                if oneNewsJson['user'] == usernameJson['user']:
+                    post = models.News(title=oneNewsJson['title'], content=oneNewsJson['content'], author_id=user.id)
+                    post.save()
+                    # Check
+                    self.assertEqual(oneNewsJson['title'], models.News.objects.last().title)
+                    self.assertEqual(oneNewsJson['content'], models.News.objects.last().content)
