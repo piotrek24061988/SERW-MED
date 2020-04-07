@@ -16,3 +16,14 @@ class News(models.Model):
 
     def get_absolute_url(self):
         return reverse('serw-med-news-detail', kwargs={'pk': self.pk})
+
+
+class Emails(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    title = models.TextField()
+    content = models.TextField()
+    date_posted = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return "name: " + self.name + ", email: " + self.email + ", title: " + self.title

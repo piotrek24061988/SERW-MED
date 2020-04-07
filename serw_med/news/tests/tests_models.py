@@ -75,3 +75,26 @@ class NewsModelsTestCases(unittest.TestCase):
                         post = models.News.objects.filter(title=oneNewsJson['title']).first()
                         # Check
                         self.assertEqual(oneNewsJson['title'], post.title)
+
+
+class EmailsModelsTestCases(unittest.TestCase):
+    def test_example_emails(self):
+        # Setup
+        testUsername = 'Email user'
+        testEmail = 'test@gmail.com'
+        testTitle = 'Email title'
+        testContent = 'Email content'
+        emails = None
+        # Run
+        if not models.Emails.objects.filter(title=testTitle).exists():
+            # Run
+            emails = models.Emails(name=testUsername, email=testEmail, title=testTitle, content=testContent)
+            emails.save()
+            # Check
+            self.assertEqual(testTitle, models.Emails.objects.last().title)
+            self.assertEqual(testContent, models.Emails.objects.last().content)
+        else:
+            # Run
+            emails = models.Emails.objects.filter(title=testTitle).first()
+            # Check
+            self.assertEqual(testTitle, emails.title)

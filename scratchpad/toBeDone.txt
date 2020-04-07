@@ -1,3 +1,9 @@
-0) Obslugiwanie blednych url dodac - news/urls.py
-1) jezyk angielski na polski np w file input
-3) zrobic porządek z plikami css
+1) Obluga po polsku w
+   - logowaniu https://serw-med.herokuapp.com/login/
+   - resecie hasła http://serw-med.herokuapp.com/password-reset-confirm/Nw/set-password
+2) Obslugiwanie blednych url dodac - news/urls.py
+3) Zrobic porządek z plikami css
+   - dodatkowy plik css SERW-MED/serw_med/news/static oprocz glownego
+   - glowny plik css SERW-MED/serw_med/static
+4) Hasla ukryc lepiej
+5) Znikajace zdjęcia z aktualności

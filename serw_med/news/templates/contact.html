@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
 
   <!-- Contact Us Section -->
@@ -66,43 +67,18 @@
               <!-- contact form -->
               <div class="col-md-6 mt-5 wow animated fadeInRight" data-wow-delay=".2s">
                   <div class="content-section">
-              <!-- Section Titile -->
-                      <div class="article-metadata">
-                          <h1 class="section-title">Skontaktuj się z nami!</h1>
-                      </div>
-                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                      <!-- Name -->
-                      <div class="form-group label-floating">
-                        <label class="control-label" for="name">Imię i nazwisko</label>
-                        <input class="form-control" id="name" type="text" name="name" required data-error="Proszę wprowadzić imię i nazwisko">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- email -->
-                      <div class="form-group label-floating">
-                        <label class="control-label" for="email">Email</label>
-                        <input class="form-control" id="email" type="email" name="email" required data-error="Proszę wprowadzić email">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Subject -->
-                      <div class="form-group label-floating">
-                        <label class="control-label">Temat</label>
-                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Proszę podać temat">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Message -->
-                      <div class="form-group label-floating">
-                          <label for="message" class="control-label">Wiadomość</label>
-                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Proszę wpisać treść wiadmomości"></textarea>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Form Submit -->
-                      <div class="form-submit mt-5">
-                          <button class="btn btn-outline-info" type="submit" id="form-submit">Wyślij</button>
-                          <div id="msgSubmit" class="h3 text-center hidden"></div>
-                          <div class="clearfix"></div>
-                      </div>
-                  </form>
-              </div></div>
+                      <form method="POST" enctype="multipart/form-data">
+                          {% csrf_token %}
+                          <fieldset class="form-group">
+                             <legend class="border-bottom mb-4">Skontaktuj się z nami!</legend>
+                             {{ form | crispy }}
+                          </fieldset>
+                          <div class="form-group">
+                              <button class="btn btn-outline-info" type="submit">Wyślij</button>
+                          </div>
+                      </form>
+                   </div>
+              </div>
           </div>
       </div>
     </section>

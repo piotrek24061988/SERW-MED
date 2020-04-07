@@ -1,9 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
+from django.contrib import messages
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import News
-from .forms import NewsCreateForm
+from django.core.mail import send_mail
+from .models import News, Emails
+from .forms import NewsCreateForm, SendEmailForm
 
 
 class NewsListView(ListView):
@@ -78,7 +80,23 @@ class SerwMed:
 
     @staticmethod
     def contact(request):
-        return render(request, 'contact.html')
+        if request.method == 'POST':
+            context = SendEmailForm(request.POST)
+            if context.is_valid():
+                send_mail("Django name:  " + context.cleaned_data['name'] + ", email: " + context.cleaned_data['email'] +
+                          ", tytuł: " + context.cleaned_data['title'],
+                          context.cleaned_data['content'], 'piotrek24061988@gmail.com',
+                          ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com'], fail_silently=True)
+                emails = Emails(name=context.cleaned_data['name'], email=context.cleaned_data['email'],
+                                title=context.cleaned_data['title'], content=context.cleaned_data['content'])
+                emails.save()
+                messages.success(request, 'Twoj email został wysłany')
+                return redirect('serw-med-cont')
+            else:
+                print("form not valid")
+        else:
+            context = SendEmailForm()
+        return render(request, 'contact.html', {'form': context})
 
     @staticmethod
     def cooperation(request):
