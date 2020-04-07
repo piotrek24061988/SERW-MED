@@ -1,4 +1,4 @@
-export MY_EMAIL_USER="abc"
+export MY_EMAIL_USER=""
 export MY_EMAIL_PASSWORD=""
 heroku logs --tail
 heroku local web
