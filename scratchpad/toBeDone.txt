@@ -1,6 +1,7 @@
 1) Obluga po polsku w
    - logowaniu https://serw-med.herokuapp.com/login/
    - resecie hasła http://serw-med.herokuapp.com/password-reset-confirm/Nw/set-password
+   - podpowiedzi zle wypelnionych input forms
 2) Obslugiwanie blednych url dodac - news/urls.py
 3) Zrobic porządek z plikami css
    - dodatkowy plik css SERW-MED/serw_med/news/static oprocz glownego
