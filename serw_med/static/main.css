@@ -79,11 +79,10 @@ a.article-title:hover {
   margin-bottom: 16px;
 }
 
+
 .news-img {
-  height: 640px;
-  width: 480px;
-  margin-right: 20px;
-  margin-bottom: 16px;
+  width: 100%;
+  height: auto;
 }
 
 .account-heading {
