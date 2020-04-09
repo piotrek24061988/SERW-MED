@@ -7,4 +7,8 @@
    - dodatkowy plik css SERW-MED/serw_med/news/static oprocz glownego
    - glowny plik css SERW-MED/serw_med/static
 4) Hasla ukryc lepiej
-5) Znikajace zdjęcia z aktualności
+5) Znikajace zdjęcia z aktualności - Zrobione to co dalo sie zrobic. Heroku nie pozwala przetrzymyc plikow
+                                     zaladowanych przez uzytkowinka. Wiec uzytkownik moze dodawac pliki z takich,
+                                     ktore juz istnieja w systemie i zostaly dodane commitami.
+                                     Jesli mialby powstac realny fix to trzeba by dodac zewnetrzy platny file storage.
+6) Wyczyscic powtarzajacy sie kod
