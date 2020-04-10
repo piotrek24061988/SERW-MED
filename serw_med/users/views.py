@@ -1,7 +1,17 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+from django.contrib.auth.views import LoginView, PasswordResetConfirmView
+from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, CustomAuthenticationForm, CustomSetPasswordForm
+
+
+class CustomLoginView(LoginView):
+    authentication_form = CustomAuthenticationForm
+
+
+class CustomSetPasswordView(PasswordResetConfirmView):
+    form_class = CustomSetPasswordForm
+
 
 class SerwMedUsers:
     def __init__(self):
@@ -36,5 +46,3 @@ class SerwMedUsers:
             u_form = UserUpdateForm(instance=request.user)
             p_form = ProfileUpdateForm(instance=request.user.profile)
         return render(request, 'profile.html', {'u_form': u_form, 'p_form': p_form})
-
-

@@ -1,15 +1,4 @@
 1) Obluga po polsku w
-   - logowaniu https://serw-med.herokuapp.com/login/
-   - resecie hasła http://serw-med.herokuapp.com/password-reset-confirm/Nw/set-password
    - podpowiedzi zle wypelnionych input forms
 2) Obslugiwanie blednych url dodac - news/urls.py
 3) Hasla ukryc lepiej
-
-4 done) Zrobic porządek z plikami css
-   - dodatkowy plik css SERW-MED/serw_med/news/static oprocz glownego
-   - glowny plik css SERW-MED/serw_med/static
-5 done) Znikajace zdjęcia z aktualności - Zrobione to co dalo sie zrobic. Heroku nie pozwala przetrzymyc plikow
-                                     zaladowanych przez uzytkowinka. Wiec uzytkownik moze dodawac pliki z takich,
-                                     ktore juz istnieja w systemie i zostaly dodane commitami.
-                                     Jesli mialby powstac realny fix to trzeba by dodac zewnetrzy platny file storage.
-6 done) Wyczyscic powtarzajacy sie kod np news/models.py i users/models.py

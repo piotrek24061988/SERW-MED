@@ -1,9 +1,19 @@
 from django import forms
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UsernameField, SetPasswordForm
 from django.utils.translation import gettext_lazy as _
-from .models import Profile
 from django.forms.widgets import ClearableFileInput
+from .models import Profile
+
+
+class CustomAuthenticationForm(AuthenticationForm):
+    username = UsernameField(label=_('Nazwa użytkownika'))
+    password = forms.CharField(label=_('Hasło'), widget=forms.PasswordInput)
+
+
+class CustomSetPasswordForm(SetPasswordForm):
+    new_password1 = forms.CharField(label=_("Nowe hasło"), widget=forms.PasswordInput)
+    new_password2 = forms.CharField(label=_("Potwierdź nowe hasło"), widget=forms.PasswordInput)
 
 
 class UserRegisterForm(UserCreationForm):
