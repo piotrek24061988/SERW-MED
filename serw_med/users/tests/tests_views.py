@@ -1,80 +1,39 @@
 import unittest
 from .. import views
-
-
-class RequestStub:
-    class USER:
-        @staticmethod
-        def validate_unique(exclude):
-            pass
-
-        @staticmethod
-        def full_clean(exclude, validate_unique):
-            pass
-
-        def is_authenticated(self):
-            return True
-
-        class _meta:
-            concrete_fields = ''
-            private_fields = ''
-            many_to_many = ''
-            fields = ''
-
-        class profile:
-            @staticmethod
-            def validate_unique(exclude):
-                pass
-
-            @staticmethod
-            def full_clean(exclude, validate_unique):
-                pass
-
-            class _meta:
-                concrete_fields = ''
-                private_fields = ''
-                many_to_many = ''
-                fields = ''
-
-    META = {'CSRF_COOKIE': []}
-    user = USER
-    method = 'POST'
-    POST = {'POST': []}
-    FILES = {'FILES': []}
+from common import stubs
 
 
 class UsersViewsTestCases(unittest.TestCase):
+    # Common setup
+    request = stubs.RequestStub
+    response_status = 200
+
     def test_register(self):
         # Setup
-        request = RequestStub
-        response_status = 200
+        UsersViewsTestCases.request.method = 'POST'
         response_content = b'Rejestracja'
         # Run
-        response = views.SerwMedUsers.register(request)
+        response = views.SerwMedUsers.register(UsersViewsTestCases.request)
         # Check
-        self.assertEqual(response.status_code, response_status)
+        self.assertEqual(response.status_code, UsersViewsTestCases.response_status)
         self.assertIn(response_content, response.content)
 
     def test_profile_get(self):
         # Setup
-        request = RequestStub
-        response_status = 200
+        UsersViewsTestCases.request.method = 'GET'
         response_content = b'Informacje o profilu'
         # Run
-        request.method = 'GET'
-        response = views.SerwMedUsers.profile(request)
+        response = views.SerwMedUsers.profile(UsersViewsTestCases.request)
         # Check
-        self.assertEqual(response.status_code, response_status)
+        self.assertEqual(response.status_code, UsersViewsTestCases.response_status)
         self.assertIn(response_content, response.content)
 
     def test_profile_post(self):
         # Setup
-        request = RequestStub
-        response_status = 200
+        UsersViewsTestCases.request.method = 'POST'
         response_content = b'Informacje o profilu'
         # Run
-        request.method = 'POST'
-        response = views.SerwMedUsers.profile(request)
+        response = views.SerwMedUsers.profile(UsersViewsTestCases.request)
         # Check
-        self.assertEqual(response.status_code, response_status)
+        self.assertEqual(response.status_code, UsersViewsTestCases.response_status)
         self.assertIn(response_content, response.content)

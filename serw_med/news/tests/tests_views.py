@@ -46,6 +46,7 @@ class RequestStub:
 class NewsViewsTestCases(unittest.TestCase):
     # Common setup
     request = RequestStub
+    request.method = 'GET'
     response_status = 200
 
     def test_about(self):
