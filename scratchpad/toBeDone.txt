@@ -1,4 +1,2 @@
-1) Obluga po polsku w
-   - podpowiedzi zle wypelnionych input forms
-2) Obslugiwanie blednych url dodac - news/urls.py
-3) Hasla ukryc lepiej
+1) Obslugiwanie blednych url dodac - news/urls.py
+2) Hasla ukryc lepiej
