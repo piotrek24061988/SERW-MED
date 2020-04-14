@@ -93,3 +93,22 @@ a.article-title:hover {
   height: 400px;
   width: 100%;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2f788a;
+  color: white;
+  text-align: center;
+}
+
+.logo-img {
+  height: 15px;
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
