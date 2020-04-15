@@ -112,3 +112,12 @@ a.article-title:hover {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.main-logo-img {
+  height: 30px;
+  width: auto;
+  margin-left: 2px;
+  margin-right: 40px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
