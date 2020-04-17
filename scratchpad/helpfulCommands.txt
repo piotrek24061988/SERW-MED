@@ -2,6 +2,7 @@ export MY_EMAIL_USER=""
 export MY_EMAIL_PASSWORD=""
 heroku logs --tail
 heroku local web
+heroku local web --port 5003
 heroku open
 heroku config:set
 heroku releases
