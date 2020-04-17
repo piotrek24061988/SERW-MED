@@ -145,3 +145,14 @@ a:hover {
     color: blue;
     text-decoration: none;
 }
+
+.scrollup {
+    width: 64px;
+    height: 64px;
+    background: url("/media/news_pics/scroll.jpg") no-repeat;
+    background-size: cover;
+    position : fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
