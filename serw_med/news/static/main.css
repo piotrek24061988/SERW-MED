@@ -136,6 +136,11 @@ a:visited {
     text-decoration: none;
 }
 
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
 a:hover {
     color: blue;
     text-decoration: none;
