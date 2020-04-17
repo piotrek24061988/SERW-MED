@@ -124,3 +124,19 @@ a.article-title:hover {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+#Fixing links style: no underscore, no blue color
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
