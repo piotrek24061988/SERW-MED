@@ -60,7 +60,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_about(self):
         # Setup
-        response_content = b'SERW-MED ABOUT'
+        response_content = b'O nas'
         # Run
         response = views.SerwMed.about(NewsViewsTestCases.request)
         # Check
