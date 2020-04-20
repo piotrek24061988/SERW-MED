@@ -154,7 +154,7 @@ a:hover {
     background-size: cover;
     position : fixed;
     right: 25px;
-    bottom: 25px;
+    bottom: 45px;
     display: none;
     z-index:1;
 }
