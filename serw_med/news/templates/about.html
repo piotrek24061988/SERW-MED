@@ -1,6 +1,50 @@
 {% extends "base.html" %}
 {% block content %}
 
+        <!-- Scroll to top button functionality -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="/static/jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+            {
+                $('#link1').click(function()
+                {
+                	$.scrollTo($('#link1dent'), 1500);
+                });
+
+                $('#link2').click(function()
+                {
+                	$.scrollTo($('#link2dent'), 1500);
+                });
+
+                $('#link3').click(function()
+                {
+                	$.scrollTo($('#link3dent'), 1500);
+                });
+
+                $('#link4').click(function()
+                {
+                	$.scrollTo($('#link4dent'), 1500);
+                });
+
+
+                //Scroll to top when button selected
+                $('.scrollup').click(function()
+                {
+                    $.scrollTo(0, 1500);
+                });
+
+                //Show / hide button depend os position
+                $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>500) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                });
+            });
+        </script>
+        <a href="#" class="scrollup"></a>
+
+
     <article>
 
         <section>
@@ -19,7 +63,7 @@
 
                 <div class="ourdomain">
                     <figure>
-                        <a href="#">
+                        <a href="#" id="link1">
                             <img class="domainfoto" src="/media/domains/dent.jpg">
                         </a>
                         <figcaption>aparatura dentystyczna</figcaption>
@@ -28,14 +72,14 @@
 
                 <div class="ourdomain">
                     <figure>
-                        <a href="#">
+                        <a href="#" id="link2">
                             <img class="domainfoto" src="/media/domains/hospital.jpg">
                         </a>
                         <figcaption>aparatura medyczna</figcaption>
                     </figure>
                 </div>
 
-                <div class="ourdomain">
+                <div class="ourdomain" id="link3">
                     <figure>
                         <a href="#">
                             <img class="domainfoto" src="/media/domains/cosmetology.jpg">
@@ -44,7 +88,7 @@
                     </figure>
                 </div>
 
-                <div class="ourdomain">
+                <div class="ourdomain" id="link4">
                     <figure>
                         <a href="#">
                             <img class="domainfoto" src="/media/domains/rtg.jpg">
@@ -57,11 +101,65 @@
 
         </section>
 
+            <div class="details">
+
+                <header class="mb-5">
+                    <h1>Co dokładnie robimy</h1>
+                </header>
+
+                <div class="domeindetail" id="link1dent">
+                    <div class="domeindetailimage">
+                        <img class="domainfoto" src="/media/domains/dent2.jpg">
+                    </div>
+
+                    <div class="domeindescription">
+                        <h2>aparatura dentystyczna</h2>
+                        <p>unity stomatologiczny, sterylizacja, konserwacja i higiena, radiologia, kompresory, systemy ssące,
+                           separatory, piaskarki, wywoływarki, oświetlenie, lasery</p>
+                    </div>
+                </div>
+
+                <div class="domeindetail" id="link2dent">
+                    <div class="domeindetailimage">
+                        <img class="domainfoto" src="/media/domains/hospital2.jpg">
+                    </div>
+
+                    <div class="domeindescription">
+                        <h2>aparatura medyczna</h2>
+                        <p>...</p>
+                    </div>
+                </div>
+
+                 <div class="domeindetail" id="link3dent">
+                    <div class="domeindetailimage">
+                        <img class="domainfoto" src="/media/domains/cosmetology2.jpg">
+                    </div>
+
+                    <div class="domeindescription">
+                        <h2>aparatura kosmetyczne</h2>
+                        <p>...</p>
+                    </div>
+                </div>
+
+                 <div class="domeindetail" id="link4dent">
+                    <div class="domeindetailimage">
+                        <img class="domainfoto" src="/media/domains/rtg2.jpg">
+                    </div>
+
+                    <div class="domeindescription">
+                        <h2>rtg</h2>
+                        <p>...</p>
+                    </div>
+                </div>
+
+            </div>
+
         <section>
 
-        </section>
-
-        <section>
+            <div class="border-top pt-2 mb-5">
+                <small class="text-muted">Masz pytania? <a class="ml-2" href="{% url 'serw-med-cont' %}">Skontaktuj się z nami</a>
+                </small>
+            </div>
 
         </section>
 
