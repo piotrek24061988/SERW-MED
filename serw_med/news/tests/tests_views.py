@@ -78,7 +78,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_cooperation(self):
         # Setup
-        response_content = b'SERW-MED COOPERATION'
+        response_content = b'w przygotowaniu'
         # Run
         response = views.SerwMed.cooperation(NewsViewsTestCases.request)
         # Check
@@ -87,7 +87,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_gallery(self):
         # Setup
-        response_content = b'SERW-MED GALLERY'
+        response_content = b'Galeria w przygotowaniu'
         # Run
         response = views.SerwMed.gallery(NewsViewsTestCases.request)
         # Check
