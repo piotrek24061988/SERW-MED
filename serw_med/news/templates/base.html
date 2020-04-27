@@ -57,6 +57,13 @@
         </header>
 
         <main role="main" class="container">
+
+            <!-- Play background music from https://freemusicarchive.org/ -->
+            <audio id="backgorundAudio" loop autoplay preload="auto" style="display:none">
+                <source src="/media/music/sample1.mp3" />
+                <source src="/media/music/sample2.mp3" />
+                <source src="/media/music/sample3.mp3" />
+            </audio>
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert alert-{{ message.tags }}">
