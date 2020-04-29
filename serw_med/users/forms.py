@@ -42,7 +42,7 @@ class MyClearableFileInput(ClearableFileInput):
 
 
 class ProfileUpdateForm(forms.ModelForm):
-    image = forms.ImageField(label=_("Zdjęcie"), widget=MyClearableFileInput) #required=False,
+    image = forms.ImageField(label=_("Zdjęcie"), widget=MyClearableFileInput)
 
     class Meta:
         model = Profile

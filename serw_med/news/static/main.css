@@ -37,6 +37,7 @@ ul {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  box-shadow: 10px 10px 48px 0px rgba(47,120,138,1);
 }
 
 .article-title {
@@ -95,6 +96,7 @@ a.article-title:hover {
 #map {
   height: 400px;
   width: 100%;
+  box-shadow: 10px 10px 48px 0px rgba(47,120,138,1);
 }
 
 .footer {
@@ -185,6 +187,7 @@ a:hover {
 
 .ourdomain img {
     border-radius: 10px;
+    box-shadow: 10px 10px 48px 0px rgba(47,120,138,1);
 }
 
 .ourdomain a {
@@ -278,4 +281,14 @@ figcaption {
 
 .youtubefont {
     color: red;
+}
+
+input[type='file']
+{
+  color: transparent;
+}
+
+input[type='file']:hover
+{
+  color: black;
 }
