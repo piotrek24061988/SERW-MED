@@ -240,6 +240,7 @@ figcaption {
 
 .domeindetailimage img {
     border-radius: 10px;
+    box-shadow: 10px 10px 48px 0px rgba(47,120,138,1);
 }
 
 .domeindescription {
