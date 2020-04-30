@@ -190,18 +190,18 @@ a:hover {
     box-shadow: 10px 10px 48px 0px rgba(47,120,138,1);
 }
 
-.ourdomain a {
-    opacity: 1;
-}
-
-.ourdomain a:hover {
-    opacity: 0.5;
-}
-
 .domainfoto {
     max-width: 100%;
     width: 480px;
     height: auto;
+}
+
+.domainfoto2 {
+    transition: all 0.5s ease-in-out;
+}
+
+.domainfoto2:hover {
+    transform: scale(0.9);
 }
 
 figure {
