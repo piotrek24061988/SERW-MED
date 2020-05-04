@@ -16,6 +16,8 @@
         <link rel="stylesheet" type="text/css" href="/media/fontello/css/fontello.css">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
+        <script type="text/javascript" src="/static/timeAndDate.js"></script>
+
         {% if title %}
             <title>SERW-MED {{ title }}</title>
         {% else %}
@@ -23,7 +25,7 @@
         {% endif %}
     </head>
 
-    <body>
+    <body onload="currentTimeAndDate();">
         <header class="site-header">
             <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
                 <div class="container">
@@ -89,6 +91,8 @@
                 <a href="https://www.heroku.com/home" target="_blank">
                     <img class="logo-img" src="/media/logo/heroku.png">
                 </a>
+
+                <div id="watch" style="float:right; margin-right: 10px;">hh:mm:ss</div>
             </div>
         </footer>
 
