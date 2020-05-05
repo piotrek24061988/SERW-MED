@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1>Galeria w przygotowaniu</h1>
+    <script type="text/javascript" src="/static/gallerySlideShow.js"></script>
+
+    <div id="galerrySlider">
+        <h1>Galeria</h1>
+        <img src="/media/gallery/1.jpg" onload="changeSlide()">
+    </div>
 
 {% endblock %}
