@@ -87,7 +87,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_gallery(self):
         # Setup
-        response_content = b'Galeria'
+        response_content = b'gallerySlider'
         # Run
         response = views.SerwMed.gallery(NewsViewsTestCases.request)
         # Check
