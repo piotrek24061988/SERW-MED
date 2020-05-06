@@ -4,7 +4,14 @@
     <script src="/static/gallerySlideShow.js"></script>
 
     <div id="gallerySlider">
-        <img src="/media/gallery/1.jpg" onload="changeSlide()">
+        <img src="/media/gallery/1.png" onload="changeSlide()">
+    </div>
+    <div id="galleryButtons">
+        <div id="galleryPauseButton">
+            <img src="/media/gallery/pause.png" onclick="playSlide()">
+        </div>
+        <img src="/media/gallery/prev.png" onclick="prevSlide()">
+        <img src="/media/gallery/next.png" onclick="nextSlide()">
     </div>
 
 {% endblock %}
