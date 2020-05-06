@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="100" column="30" lean-forward="true" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="141">
+              <caret line="101" column="96" lean-forward="true" selection-start-line="101" selection-start-column="96" selection-end-line="101" selection-end-column="96" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -29,56 +27,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/news/static/timeAndDate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/news/templates/gallery.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/news/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/news/templates/news.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/news/templates/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="45">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/serw_med/news/templates/gallery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -154,7 +120,6 @@
         <option value="$PROJECT_DIR$/scratchpad/links.txt" />
         <option value="$PROJECT_DIR$/serw_med/users/forms.py" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/profile.html" />
-        <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
         <option value="$PROJECT_DIR$/serw_med/news/static/jquery.scrollUpButton.js" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/news.html" />
         <option value="$PROJECT_DIR$/serw_med/news/static/jquery.scrollUpButtonAbout.js" />
@@ -162,9 +127,10 @@
         <option value="$PROJECT_DIR$/serw_med/news/static/timeAndDate.js" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/cooperation.html" />
         <option value="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" />
-        <option value="$PROJECT_DIR$/serw_med/news/templates/gallery.html" />
-        <option value="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" />
         <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
+        <option value="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" />
+        <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
+        <option value="$PROJECT_DIR$/serw_med/news/templates/gallery.html" />
       </list>
     </option>
   </component>
@@ -596,9 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/static/jquery.scrollUpButtonNews.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -613,10 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/news.html">
+    <entry file="file://$PROJECT_DIR$/serw_med/news/static/timeAndDate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="96" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -627,35 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="100" column="30" lean-forward="true" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#audio#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/static/timeAndDate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -663,6 +601,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="303" column="22" selection-start-line="303" selection-start-column="22" selection-end-line="303" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="101" column="96" lean-forward="true" selection-start-line="101" selection-start-column="96" selection-end-line="101" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#audio#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/templates/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
         </state>
       </provider>
     </entry>
