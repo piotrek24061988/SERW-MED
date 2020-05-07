@@ -83,7 +83,6 @@ a.article-title:hover {
   margin-bottom: 16px;
 }
 
-
 .news-img {
   width: 100%;
   height: auto;
@@ -127,7 +126,6 @@ a.article-title:hover {
   margin-bottom: 2px;
 }
 
-#Fixing links style: no underscore, no blue color
 a:link {
     color: black;
     text-decoration: none;
@@ -323,7 +321,7 @@ input[type='file']:hover
     height: 75px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display:inline-block;
     transition: all 0.5s ease-in-out;
 }
