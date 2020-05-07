@@ -159,6 +159,11 @@ a:hover {
     bottom: 45px;
     display: none;
     z-index:1;
+    transition: all 0.5s ease-in-out;
+}
+
+.scrollup:hover {
+    transform: scale(0.8);
 }
 
 .whatwedo {
@@ -314,13 +319,17 @@ input[type='file']:hover
 }
 
 #galleryButtons img {
-    width: 80px;
-    height: 80px;
-    padding: 5px;
+    width: 75px;
+    height: 75px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
     display:inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+#galleryButtons img:hover {
+    transform: scale(0.8);
 }
 
 #galleryPauseButton {

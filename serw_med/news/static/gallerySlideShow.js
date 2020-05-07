@@ -6,7 +6,7 @@ var timer2 = 0;
 
 function hideSlide() {
     if(playing) {
-        $('#gallerySlider').fadeOut(1000);
+        $('#gallerySlider').fadeOut(500);
     }
 }
 
@@ -14,18 +14,18 @@ function replaceSlide(slideNumber) {
     if(playing) {
         var file = "<img src=\"/media/gallery/" + slideNumber + ".png\"/>";
         document.getElementById("gallerySlider").innerHTML = file;
-        $('#gallerySlider').fadeIn(1000);
+        $('#gallerySlider').fadeIn(500);
     }
 }
 
 function playSlide() {
     if(playing) {
         playing = false;
-        var file = "<img src=\"/media/gallery/play.png\" onclick=\"playSlide()\"/>";
+        var file = "<img src=\"/media/gallery/play2.png\" onclick=\"playSlide()\"/>";
         document.getElementById("galleryPauseButton").innerHTML = file;
     } else {
         playing = true;
-        var file = "<img src=\"/media/gallery/pause.png\" onclick=\"playSlide()\"/>";
+        var file = "<img src=\"/media/gallery/pause2.png\" onclick=\"playSlide()\"/>";
         document.getElementById("galleryPauseButton").innerHTML = file;
     }
     resetTimers();
@@ -34,7 +34,7 @@ function playSlide() {
 function resetTimers() {
     clearTimeout(timer1);
     clearTimeout(timer2);
-    timer1 = setTimeout("hideSlide()", 4000);
+    timer1 = setTimeout("hideSlide()", 4500);
     timer2 = setTimeout("changeSlide()", 5000);
 }
 
