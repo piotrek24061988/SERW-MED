@@ -206,7 +206,7 @@ a:hover {
 
 .domainfoto2:hover {
     transform: scale(0.9);
-    filter: brightness(120%);
+    filter: brightness(115%);
 }
 
 figure {
