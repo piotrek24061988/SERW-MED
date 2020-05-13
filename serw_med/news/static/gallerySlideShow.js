@@ -1,4 +1,4 @@
-var maxNumber = 3;
+var maxNumber = 4;
 var number = 0;
 var playing = true;
 var timer1 = 0;
