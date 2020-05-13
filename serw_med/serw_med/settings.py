@@ -27,7 +27,7 @@ SECRET_KEY = 'r9k9(b(!!733w+oot=_tv8i-um7!8=5!+$ui^b3nk0x4x5t!sp'
 # DEBUG must be on as long as there is not external file storage
 DEBUG = True
 
-ALLOWED_HOSTS = ['serw-med.herokuapp.com', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['piotrek24061988.pythonanywhere.com', 'serw-med.herokuapp.com', '0.0.0.0', '127.0.0.1']
 
 
 # Application definition

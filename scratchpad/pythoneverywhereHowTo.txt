@@ -1,0 +1,36 @@
+1) Website
+https://www.pythonanywhere.com/user/piotrek24061988/
+2) Tutorial
+https://www.youtube.com/watch?v=Y4c4ickks2A
+3) Steps
+a) create virtual environment
+mkvirtualenv --python=/usr/bin/python3.7 myenv2
+b) clone code from github
+https://github.com/piotrek24061988/SERW-MED.git
+c) in pythonanywhere add new web app with manual configuration
+d) connect myenv2 to this app
+e) pip install all dependencies from config.yaml
+f) edit  /var/www/piotrek24061988_pythonanywhere_com_wsgi.py to have content like below:
+# +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+import os
+import sys
+
+path = '/home/piotrek24061988/SERW-MED/serw_med'
+#path = '/home/piotrek24061988/test/mytest'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'serw_med.settings'
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'mytest.settings'
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+g) in gitbash type django commands to set up project
+python manage.py makemigrations
+python manage.py migrate
+coverage run --omit=manage.py manage.py test news.tests users.tests
+h) in bash manually run script to verify everything is properly set up
+python -i /var/www/piotrek24061988_pythonanywhere_com_wsgi.py
+i) in pythonanywhere gui select reload piotrek24061988.pythonanywhere.com
+4) Host is http://piotrek24061988.pythonanywhere.com and need to be added to allowed hosts
