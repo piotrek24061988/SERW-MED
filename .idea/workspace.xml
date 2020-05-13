@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scratchpad/toBeDone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/toBeDone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/news/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serw_med/news/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="298" column="11" selection-start-line="298" selection-start-column="11" selection-end-line="298" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -132,11 +132,11 @@
         <option value="$PROJECT_DIR$/serw_med/news/templates/gallery.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/about.html" />
-        <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
         <option value="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" />
         <option value="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" />
         <option value="$PROJECT_DIR$/serw_med/users/tests/tests_views.py" />
         <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
+        <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
       </list>
     </option>
   </component>
@@ -611,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/static/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="298" column="11" selection-start-line="298" selection-start-column="11" selection-end-line="298" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -629,6 +622,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="297" column="18" selection-start-line="297" selection-start-column="18" selection-end-line="297" selection-end-column="18" />
         </state>
       </provider>
     </entry>
