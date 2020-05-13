@@ -1,2 +1,3 @@
 1) Obslugiwanie blednych url dodac - news/urls.py
 2) Hasla ukryc lepiej
+3) Wywalanie sie heroku po commicie naprawic

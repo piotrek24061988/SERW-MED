@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad/toBeDone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/toBeDone.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -38,8 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="181">
+              <caret line="16" column="19" selection-start-line="16" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -130,7 +139,6 @@
         <option value="$PROJECT_DIR$/serw_med/users/views.py" />
         <option value="$PROJECT_DIR$/serw_med/serw_med/urls.py" />
         <option value="$PROJECT_DIR$/serw_med/serw_med/settings.py" />
-        <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
         <option value="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/register.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/news_create.html" />
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/serw_med/news/templates/about.html" />
         <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
         <option value="$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js" />
+        <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
       </list>
     </option>
   </component>
@@ -450,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -634,17 +636,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/static/gallerySlideShow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="16" column="19" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
