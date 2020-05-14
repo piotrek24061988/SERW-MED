@@ -1,2 +1,2 @@
-1) Obslugiwanie blednych url dodac - news/urls.py
-2) Hasla ukryc lepiej
+1) Obslugiwanie błędnych url dodać - news/urls.py
+2) Hasła ukryć lepiej
