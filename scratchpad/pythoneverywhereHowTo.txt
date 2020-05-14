@@ -33,4 +33,6 @@ coverage run --omit=manage.py manage.py test news.tests users.tests
 h) in bash manually run script to verify everything is properly set up
 python -i /var/www/piotrek24061988_pythonanywhere_com_wsgi.py
 i) in pythonanywhere gui select reload piotrek24061988.pythonanywhere.com
-4) Host is http://piotrek24061988.pythonanywhere.com and need to be added to allowed hosts
+                                    or serwmed.pythonanywhere.com
+4) Host is http://piotrek24061988.pythonanywhere.com or serwmed.pythonanywhere.com and need to be added to allowed hosts
+5) Run until 3 months from today button need to be selected each 3 months
