@@ -1,7 +1,8 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
-    <script src="/static/gallerySlideShow.js"></script>
+    <script src="{% static 'gallerySlideShow.js' %}"></script>
 
     <div id="gallerySlider">
         <img src="/media/gallery/1.png" onload="changeSlide()">
