@@ -1,1 +1,1 @@
-web: cd serw_med && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic && python3 manage.py test news.tests users.tests && gunicorn serw_med.wsgi --log-file -
+web: cd serw_med && python3 manage.py makemigrations && python3 manage.py migrate && echo 'yes' | python3 manage.py collectstatic && python3 manage.py test news.tests users.tests && gunicorn serw_med.wsgi --log-file -
