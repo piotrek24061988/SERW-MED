@@ -31,6 +31,19 @@ ul {
   font-weight: 500;
 }
 
+.site-header .navbar-nav .dropdown-menu {
+  background-color: #2f788a;
+}
+
+.site-header .navbar-nav .dropdown-item {
+  color: #ffffff;
+  background-color: #2f788a;
+}
+
+.site-header .navbar-nav .dropdown-item:hover {
+  color: #ffff22;
+}
+
 .content-section {
   background: #ffffff;
   padding: 10px 20px;

@@ -29,7 +29,7 @@
         <header class="site-header">
             <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
                 <div class="container">
-                    <a href="{% url 'serw-med-about' %}">
+                    <a class="navbar-brand" href="{% url 'serw-med-about' %}">
                         <img class="main-logo-img" src="/media/logo/serwmedWhite.png">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +40,17 @@
                             <a class="nav-item nav-link" href="{% url 'serw-med-about' %}">Firma</a>
                             <a class="nav-item nav-link" href="{% url 'serw-med-cont' %}">Kontakt</a>
                             <a class="nav-item nav-link" href="{% url 'serw-med-news' %}">Aktualności</a>
-                            <a class="nav-item nav-link" href="{% url 'serw-med-coop' %}">Współpraca</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="subnav" aria-haspopup="true">Współpraca</a>
+                                <div class="dropdown-menu" aria-labelledby="subnav">
+                                    <a class="dropdown-item" href="{% url 'serw-med-coop' %}">Klienci</a>
+                                    <a class="dropdown-item" href="{% url 'serw-med-coop' %}">Serwisy</a>
+                                    <a class="dropdown-item" href="{% url 'serw-med-coop' %}">Producenci</a>
+                                </div>
+                            </li>
                             <a class="nav-item nav-link" href="{% url 'serw-med-gall' %}">Galeria</a>
                         </div>
 
-                        <!-- Navbar Right Side -->
                         <div class="navbar-nav">
                             {% if user.is_authenticated %}
                                 <a class="nav-item nav-link" href="{% url 'serw-med-profile' %}">Profil</a>
