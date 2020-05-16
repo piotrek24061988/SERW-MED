@@ -335,3 +335,11 @@ input[type='file']:hover
 #galleryPauseButton {
     display:inline-block;
 }
+
+@media (max-width: 990px)
+{
+    .teamtable
+    {
+        margin-top: 20px;
+    }
+}

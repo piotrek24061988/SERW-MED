@@ -78,7 +78,7 @@ class NewsViewsTestCases(unittest.TestCase):
 
     def test_cooperation(self):
         # Setup
-        response_content = b'w przygotowaniu'
+        response_content = b'Franklin Delano Roosvelt'
         # Run
         response = views.SerwMed.cooperation(NewsViewsTestCases.request)
         # Check
