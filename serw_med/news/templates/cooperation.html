@@ -1,5 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
+
+    <!-- Scroll to top button functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{% static 'jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'jquery.scrollUpButtonCooperation.js' %}"></script>
+    <a href="#" class="scrollup"></a>
 
     <article>
 
@@ -33,7 +40,48 @@
                     <img src="/media/cooperation/teamTable.jpg" class="img-fluid" style="border-radius: 5%">
                 </div>
 
-                <div class="col-12 text-center my-5">
+                <div class="border-top pt-2 col-12 text-center my-5">
+                    <h1 class="h2 ml-0 mb-4 text-center" id="clients">Klienci</h1>
+
+                    <a href="https://www.medicover.pl" target="_blank">
+                        <img src="/media/cooperation/medicover.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+                </div>
+
+                <div class="border-top pt-2 col-12 text-center my-5">
+                    <h1 class="h2 ml-0 mb-4 text-center" id="producents">Producenci</h1>
+
+                    <a href="https://www.melag.com" target="_blank">
+                        <img src="/media/cooperation/melag.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="https://www.varian.com" target="_blank">
+                        <img src="/media/cooperation/varian.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="https://protec-med.com" target="_blank">
+                        <img src="/media/cooperation/protec.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="http://www.chirana.eu" target="_blank">
+                        <img src="/media/cooperation/chirana.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="https://farum.pl" target="_blank">
+                        <img src="/media/cooperation/farum.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="https://xray-swiss.ch" target="_blank">
+                        <img src="/media/cooperation/josef.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+
+                    <a href="http://www3.gehealthcare.pl" target="_blank">
+                        <img src="/media/cooperation/gehealthcare.png" class="img-fluid col-lg-3 float-left my-1">
+                    </a>
+                </div>
+
+                <div class="border-top pt-2 col-12 text-center my-5">
+                    <h1 class="h2 ml-0 mb-4 text-center" id="services">Serwisy</h1>
                 </div>
 
             </div>
