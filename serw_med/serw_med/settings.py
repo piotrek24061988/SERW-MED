@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['serwmed.pythonanywhere.com', 'piotrek24061988.pythonanywhere.c
 INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'users.apps.UsersConfig',
+    'store.apps.StoreConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
