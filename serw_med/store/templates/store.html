@@ -2,7 +2,36 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-     <h3>sklep w przygotowaniu</h3>
-     <img src="/media/store/basket.png" style="width: 640px; max-width: 50vw; height: auto;">
+     <div class="container">
+          <header>
+               <h3>sklep w przygotowaniu</h3>
+          </header>
+
+          <div class="row">
+               <div class="col-md-4">
+                    <figure>
+                         <a href="#" id="storelink1">
+                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1">
+                         </a>
+                    </figure>
+               </div>
+
+              <div class="col-md-4">
+                    <figure>
+                         <a href="#" id="storelink2">
+                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1">
+                         </a>
+                    </figure>
+               </div>
+
+               <div class="col-md-4">
+                    <figure>
+                         <a href="#" id="storelink3">
+                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1">
+                         </a>
+                    </figure>
+               </div>
+          </div>
+     </div>
 
 {% endblock %}
