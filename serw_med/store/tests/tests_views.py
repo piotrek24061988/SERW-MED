@@ -11,7 +11,7 @@ class StoreViewsTestCases(unittest.TestCase):
     def test_store(self):
         # Setup
         StoreViewsTestCases.request.method = 'POST'
-        response_content = b'store'
+        response_content = b'sklep'
         # Run
         response = views.SerwMedStore.store(StoreViewsTestCases.request)
         # Check

@@ -1,3 +1,5 @@
 1) Obslugiwanie błędnych url dodać - news/urls.py
 2) Hasła ukryć lepiej
 3) Budowa sklepu
+https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=2   - 20min
+https://codewithsteps.herokuapp.com/part/2ab3a925-1cae-4761-8ed0-a171c2a47be3/
