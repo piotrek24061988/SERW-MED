@@ -1,2 +1,3 @@
 1) Obslugiwanie błędnych url dodać - news/urls.py
 2) Hasła ukryć lepiej
+3) Budowa sklepu
