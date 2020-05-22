@@ -49,7 +49,7 @@
                                 </div>
                             </li>
                             <a class="nav-item nav-link" href="{% url 'serw-med-gall' %}">Galeria</a>
-                            <!--<a class="nav-item nav-link" href="{% url 'serw-med-store' %}">Sklep</a>-->
+                            <a class="nav-item nav-link" href="{% url 'serw-med-store' %}">Sklep</a>
                         </div>
 
                         <div class="navbar-nav">
@@ -60,6 +60,10 @@
                                 <a class="nav-item nav-link" href="{% url 'serw-med-login' %}">Logowanie</a>
                                 <a class="nav-item nav-link" href="{% url 'serw-med-register' %}">Rejestracja</a>
                             {% endif %}
+
+                            <a href="{% url 'serw-med-cart' %}" target="_blank">
+                                <img class="basket-img" src="/media/store/basket_white.png">
+                            </a>
                         </div>
                     </div>
                 </div>
