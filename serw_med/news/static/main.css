@@ -352,3 +352,15 @@ input[type='file']:hover
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.store-quant {
+    display: inline-block;
+    max-width: 35px;
+    height: auto;
+}
+
+.form-field {
+    width: 250px;
+    padding: 5px;
+    display: inline-block;
+}

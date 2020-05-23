@@ -21,7 +21,7 @@ class StoreViewsTestCases(unittest.TestCase):
     def test_cart(self):
         # Setup
         StoreViewsTestCases.request.method = 'POST'
-        response_content = b'cart'
+        response_content = b'lista'
         # Run
         response = views.SerwMedStore.cart(StoreViewsTestCases.request)
         # Check
@@ -31,7 +31,7 @@ class StoreViewsTestCases(unittest.TestCase):
     def test_checkout(self):
         # Setup
         StoreViewsTestCases.request.method = 'POST'
-        response_content = b'checkout'
+        response_content = b'potwierdzenie'
         # Run
         response = views.SerwMedStore.checkout(StoreViewsTestCases.request)
         # Check

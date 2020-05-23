@@ -27,7 +27,7 @@
 
     <body onload="currentTimeAndDate();">
         <header class="site-header">
-            <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="{% url 'serw-med-about' %}">
                         <img class="main-logo-img" src="/media/logo/serwmedWhite.png">
@@ -49,7 +49,7 @@
                                 </div>
                             </li>
                             <a class="nav-item nav-link" href="{% url 'serw-med-gall' %}">Galeria</a>
-                            <!--<a class="nav-item nav-link" href="{% url 'serw-med-store' %}">Sklep</a>-->
+                            <a class="nav-item nav-link" href="{% url 'serw-med-store' %}">Sklep</a>
                         </div>
 
                         <div class="navbar-nav">
@@ -61,9 +61,9 @@
                                 <a class="nav-item nav-link" href="{% url 'serw-med-register' %}">Rejestracja</a>
                             {% endif %}
 
-                            <!--<a href="{% url 'serw-med-cart' %}" target="_blank">
+                            <a href="{% url 'serw-med-cart' %}">
                                 <img class="basket-img" src="/media/store/basket_white.png">
-                            </a>-->
+                            </a>
                         </div>
                     </div>
                 </div>

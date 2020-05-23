@@ -2,6 +2,76 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-    <h3>checkout</h3>
+    <div class="container">
+          <header>
+               <h3 class="text-center">potwierdzenie zamówienia</h3>
+          </header>
+
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="border text-center rounded bg-light mb-5">
+                      <form id="form">
+                          <div id="user-info">
+                              <p>Informacje o użytkowniku</p>
+                              <div class="form-field">
+                                  <input required class="form-control" type="text" name="login" placeholder="login...">
+                              </div>
+
+                              <div class="form-field">
+                                  <input required class="form-control" type="email" name="email" placeholder="email...">
+                              </div>
+                          </div>
+
+                          <div id="shipping-info">
+                              <p>Informacje o dostawie</p>
+                              <div class="form-field">
+                                  <input required class="form-control" type="text" name="adres" placeholder="adres... ">
+                              </div>
+                              <div class="form-field">
+                                  <input required class="form-control" type="text" name="kod pocztowy" placeholder="kod... ">
+                              </div>
+                              <div class="form-field">
+                                  <input required class="form-control" type="text" name="miasto" placeholder="miasto... ">
+                              </div>
+                              <div class="form-field">
+                                  <input class="form-control" type="text" name="telefon" placeholder="telefon... ">
+                              </div>
+                          </div>
+
+                          <input id="store-form" type="submit" value="Potwierdż" class="btn btn-outline-info m-1">
+                      </form>
+                  </div>
+
+                  <!--<div class="border text-center rounded bg-light mb-5" id="payment-info">
+                      <small>Formy płatności</small>
+                  </div>-->
+              </div>
+
+              <div class="col-md-6">
+                  <div class="border text-center rounded bg-light mb-5">
+                      <a href="{% url 'serw-med-cart' %}"><button class="btn btn-outline-info m-1">Modyfikuj</button></a>
+                      <p>Podsumowanie zamówienia</p>
+                      <table class="table">
+                          <tr>
+                              <th>
+                                  <a href="#" id="storelink5">
+                                    <img src="/media/store/placeholder.png" class="img-fluid text-center" style="max-width: 35px; height: auto;">
+                                  </a>
+                              </th>
+                              <th><h5>produkt 1</h5></th>
+                              <th><h5>0</h5></th>
+                              <th><h5>0 zł</h5></th>
+                          </tr>
+                          <tr>
+                              <th></th>
+                              <th><h5>Produkty: <strong>0</strong></h5></th>
+                              <th></th>
+                              <th><h5>Kwota: <strong>0zł</strong></h5></th>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+    </div>
 
 {% endblock %}
