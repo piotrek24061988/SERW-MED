@@ -8,77 +8,21 @@
           </header>
 
           <div class="row">
-               <div class="col-md-4">
+
+               {% for product in products %}
+               <div class="col-md-4 mb-3">
                     <figure class="border text-center rounded bg-light">
                          <a href="#" id="storelink1">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
+                              <img src="{{ product.imageURL }}" class="img-fluid float-left my-1 p-1"><!--src="/media/store/placeholder.png"-->
                          </a>
-                         <figcaption class="p-1">produkt
-                             <h5 class="float-right mr-2">0 zł</h5>
+                         <figcaption class="p-1">{{ product.name }}
+                             <h5 class="float-right mr-2">{{ product.price|floatformat:2 }} zł</h5>
                          </figcaption>
                          <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
                     </figure>
                </div>
+               {% endfor %}
 
-               <div class="col-md-4">
-                    <figure class="border text-center rounded bg-light">
-                         <a href="#" id="storelink2">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
-                         </a>
-                         <figcaption class="p-1">produkt
-                             <h5 class="float-right mr-2">0 zł</h5>
-                         </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
-                    </figure>
-               </div>
-
-               <div class="col-md-4">
-                    <figure class="border text-center rounded bg-light">
-                         <a href="#" id="storelink3">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
-                         </a>
-                         <figcaption class="p-1">produkt
-                            <h5 class="float-right mr-2">0 zł</h5>
-                         </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
-                    </figure>
-               </div>
-
-               <div class="col-md-4">
-                    <figure class="border text-center rounded bg-light">
-                         <a href="#" id="storelink4">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
-                         </a>
-                         <figcaption class="p-1">produkt
-                            <h5 class="float-right mr-2">0 zł</h5>
-                         </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
-                    </figure>
-               </div>
-
-               <div class="col-md-4">
-                    <figure class="border text-center rounded bg-light">
-                         <a href="#" id="storelink5">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
-                         </a>
-                         <figcaption class="p-1">produkt
-                             <h5 class="float-right mr-2">0 zł</h5>
-                         </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
-                    </figure>
-               </div>
-
-               <div class="col-md-4">
-                    <figure class="border text-center rounded bg-light mb-5">
-                         <a href="#" id="storelink6">
-                              <img src="/media/store/placeholder.png" class="img-fluid float-left my-1 p-1">
-                         </a>
-                         <figcaption class="p-1">produkt
-                             <h5 class="float-right mr-2">0 zł</h5>
-                         </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
-                    </figure>
-               </div>
           </div>
      </div>
 

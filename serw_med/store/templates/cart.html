@@ -21,21 +21,23 @@
                               <th><h5><strong>Cena łączna:</strong></h5></th>
                           </tr>
 
+                          {% for item in items %}
                           <tr>
                               <th>
-                                  <a href="#" id="storelink5">
-                                    <img src="/media/store/placeholder.png" class="img-fluid text-center" style="max-width: 35px; height: auto;">
+                                  <a href="#"><!--id="storelink5"-->
+                                    <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 50px; height: auto;">
                                   </a>
                               </th>
-                              <th><h5>produkt 1</h5></th>
-                              <th><h5>0 zł</h5></th>
+                              <th><h5>{{ item.product.name }}</h5></th>
+                              <th><h5>{{ item.product.price|floatformat:2 }}zł</h5></th>
                               <th>
                                   <img class="store-quant" src="/media/gallery/prev2.png">
-                                  <h5 class="store-quant">0</h5>
+                                  <h5 class="store-quant">{{ item.quantity }}</h5>
                                   <img class="store-quant" src="/media/gallery/next2.png">
                               </th>
-                              <th><h5><strong>0 zł</strong></h5></th>
+                              <th><h5><strong>{{ item.get_total }} zł</strong></h5></th>
                           </tr>
+                          {% endfor %}
                       </table>
                   </div>
 
@@ -45,8 +47,8 @@
                               <th>
                                   <a href="{% url 'serw-med-store' %}"><button class="btn btn-outline-info m-1">Sklep</button></a>
                               </th>
-                              <th><h5>Produkty: <strong>0</strong></h5></th>
-                              <th><h5>Kwota: <strong>0</strong></h5></th>
+                              <th><h5>Produkty: <strong>{{ order.get_cart_items }}</strong></h5></th>
+                              <th><h5>Kwota: <strong>{{ order.get_cart_total }} zł</strong></h5></th>
                               <th>
                                   <a href="{% url 'serw-med-checkout' %}"><button class="btn btn-outline-info m-1">Zamów</button></a>
                               </th>

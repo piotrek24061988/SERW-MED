@@ -52,12 +52,27 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_first_product(self):
         # Setup
-        productName = 'ExampleTestProduct1'
-        testPrice = 11.22
+        productName = 'Voucher konsultacyjny jednorazowy'
+        testPrice = 100
         testProduct = None
         # Run
         if not models.Product.objects.filter(name=productName).exists():
-            testProduct = models.Product(name=productName, price=testPrice)
+            testProduct = models.Product(name=productName, price=testPrice, image='store/voucher.jpg')
+            testProduct.save()
+        else:
+            testProduct = models.Product.objects.get(name=productName)
+        # Check
+        self.assertEqual(testProduct.name, productName)
+        self.assertEqual(testProduct.price, testPrice)
+
+    def test_second_product(self):
+        # Setup
+        productName = 'Abonament konsultacyjny miesięczny'
+        testPrice = 500
+        testProduct = None
+        # Run
+        if not models.Product.objects.filter(name=productName).exists():
+            testProduct = models.Product(name=productName, price=testPrice, image='store/abonament.jpg')
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)

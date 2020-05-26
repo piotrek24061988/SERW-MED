@@ -34,6 +34,8 @@ class RequestStub:
                 many_to_many = ''
                 fields = ''
 
+        customer = None
+
     META = {'CSRF_COOKIE': []}
     user = USER
     method = 'POST'

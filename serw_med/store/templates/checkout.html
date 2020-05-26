@@ -52,21 +52,23 @@
                       <a href="{% url 'serw-med-cart' %}"><button class="btn btn-outline-info m-1">Modyfikuj</button></a>
                       <p>Podsumowanie zamówienia</p>
                       <table class="table">
+                          {% for item in items %}
                           <tr>
                               <th>
-                                  <a href="#" id="storelink5">
-                                    <img src="/media/store/placeholder.png" class="img-fluid text-center" style="max-width: 35px; height: auto;">
+                                  <a href="#"><!--id="storelink5"-->
+                                    <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 35px; height: auto;">
                                   </a>
                               </th>
-                              <th><h5>produkt 1</h5></th>
-                              <th><h5>0</h5></th>
-                              <th><h5>0 zł</h5></th>
+                              <th><h5>{{ item.product.name }}</h5></th>
+                              <th><h5>{{ item.quantity }}</h5></th>
+                              <th><h5>{{ item.get_total }} zł</h5></th>
                           </tr>
+                          {% endfor %}
                           <tr>
                               <th></th>
-                              <th><h5>Produkty: <strong>0</strong></h5></th>
+                              <th><h5>Produkty: <strong>{{ order.get_cart_items }}</strong></h5></th>
                               <th></th>
-                              <th><h5>Kwota: <strong>0zł</strong></h5></th>
+                              <th><h5>Kwota: <strong>{{ order.get_cart_total }} zł</strong></h5></th>
                           </tr>
                       </table>
                   </div>
