@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 {% block content %}
 
      <div class="container">
@@ -31,9 +32,9 @@
                               <th><h5>{{ item.product.name }}</h5></th>
                               <th><h5>{{ item.product.price|floatformat:2 }}zł</h5></th>
                               <th>
-                                  <img class="store-quant" src="/media/gallery/prev2.png">
+                                  <img class="store-quant-img update-cart" data-product="{{ item.product.id }}" data-action="remove" src="/media/gallery/prev2.png">
                                   <h5 class="store-quant">{{ item.quantity }}</h5>
-                                  <img class="store-quant" src="/media/gallery/next2.png">
+                                  <img class="store-quant-img update-cart" data-product="{{ item.product.id }}" data-action="add" src="/media/gallery/next2.png">
                               </th>
                               <th><h5><strong>{{ item.get_total }} zł</strong></h5></th>
                           </tr>
@@ -59,5 +60,8 @@
               </div>
           </div>
      </div>
+
+     <script type="text/javascript" src="{% static 'tokenCSRF.js' %}"></script>
+     <script type="text/javascript" src="{% static 'store.js' %}"></script>
 
 {% endblock %}

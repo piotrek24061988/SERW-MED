@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 {% block content %}
 
      <div class="container">
@@ -18,12 +19,15 @@
                          <figcaption class="p-1">{{ product.name }}
                              <h5 class="float-right mr-2">{{ product.price|floatformat:2 }} zł</h5>
                          </figcaption>
-                         <button class="btn btn-outline-info my-1">Dodaj do koszyka</button>
+                         <button data-product={{ product.id }} data-action="add" class="btn btn-outline-info my-1 update-cart">Dodaj do koszyka</button>
                     </figure>
                </div>
                {% endfor %}
 
           </div>
      </div>
+
+     <script type="text/javascript" src="{% static 'tokenCSRF.js' %}"></script>
+     <script type="text/javascript" src="{% static 'store.js' %}"></script>
 
 {% endblock %}

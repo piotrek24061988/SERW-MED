@@ -30,6 +30,7 @@ urlpatterns = [
     path('store/', store_views.SerwMedStore.store, name='serw-med-store'),
     path('cart/', store_views.SerwMedStore.cart, name='serw-med-cart'),
     path('checkout/', store_views.SerwMedStore.checkout, name='serw-med-checkout'),
+    path('update-item/', store_views.SerwMedStore.updateItem, name='serw-med-update-item'),
     path('password-reset/', auth_views.PasswordResetView.as_view(template_name='password_reset.html'),
          name='password_reset'),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='password_reset_done.html'),

@@ -61,9 +61,12 @@
                                 <a class="nav-item nav-link" href="{% url 'serw-med-register' %}">Rejestracja</a>
                             {% endif %}
 
+                            {% if request.path == '/store/' %}
                             <a href="{% url 'serw-med-cart' %}">
                                 <img class="basket-img" src="/media/store/basket_white.png">
+                                <p id="cart-total">{{ cartItems }}</p>
                             </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
