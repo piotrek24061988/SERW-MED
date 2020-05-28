@@ -5,6 +5,7 @@ from django.contrib import messages
 import json
 import datetime
 from .models import *
+from news.models import Emails
 
 
 class SerwMedStore:
@@ -119,13 +120,15 @@ class SerwMedStore:
                 )
 
             if order.complete:
-                send_mail("Django Order - name:  " + customer.name + ", email: " + customer.email + ", tytuł: złożone zamówienie",
-                          "total: " + str(total) + ", transaction_id: " + str(transaction_id) + ", payment: " + order.payment +
-                          ", address: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) +
-                          ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']) +
-                          ", lista produktów: " + itemsStr,
-                          'piotrek24061988@gmail.com',
+                emailTitle = "Django Order - name:  " + customer.name + ", email: " + customer.email + ", tytuł: złożone zamówienie"
+                emailContent = "total: " + str(total) + ", transaction_id: " + str(transaction_id) + ", payment: " + order.payment + \
+                          ", address: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) + \
+                          ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']) + \
+                          ", lista produktów: " + itemsStr
+                send_mail(emailTitle, emailContent, 'piotrek24061988@gmail.com',
                           ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com', customer.email], fail_silently=True)
+                emails = Emails(name=customer.name, email=customer.email, title=emailTitle, content=emailContent)
+                emails.save()
                 messages.success(request, 'Twoje zamówienie zostało złożone')
         else:
             print('User is not logged in')
