@@ -6,3 +6,6 @@ https://codewithsteps.herokuapp.com/part/2ab3a925-1cae-4761-8ed0-a171c2a47be3/
 3)FF YT ui nakrywanie sie poprawic
 4)Skroll button w nawigacji po sklepie
 5)Uzytkownik ja ma profil ale nie ma konta w sklepie "customer" to po wejsciu do zakladki sklepu aplikacja sie wywala
+6)dodac maila z zamowienie m do historii maili
+7)usunac customera
+

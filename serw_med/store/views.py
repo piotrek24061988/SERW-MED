@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.core.mail import send_mail
+from django.contrib import messages
 import json
 import datetime
 from .models import *
@@ -122,6 +123,7 @@ class SerwMedStore:
                           ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']),
                           'piotrek24061988@gmail.com',
                           ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com'], fail_silently=True)
+                messages.success(request, 'Twoje zamówienie zostało złożone')
         else:
             print('User is not logged in')
         return JsonResponse('Payment complete', safe=False)
