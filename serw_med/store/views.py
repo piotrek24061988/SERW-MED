@@ -68,8 +68,6 @@ class SerwMedStore:
         data = json.loads(request.body)
         productId = data['productId']
         action = data['action']
-        print('Action', action)
-        print('productId', productId)
 
         customer = request.user.customer
         product = Product.objects.get(id=productId)
@@ -91,7 +89,6 @@ class SerwMedStore:
 
     @staticmethod
     def processOrder(request):
-        print('Data: ', request.body)
         transaction_id = datetime.datetime.now().timestamp()
         data = json.loads(request.body)
 
@@ -105,6 +102,11 @@ class SerwMedStore:
             if total == order.get_cart_total:
                 order.complete = True
             order.save()
+
+            items = order.orderitem_set.all()
+            itemsStr = ''
+            for item in items:
+                itemsStr = itemsStr + 'produkt: ' + str(item.product.name) + ', ilość: ' + str(item.quantity) + ', cena łączna: ' + str(item.get_total) + ', '
 
             if order.shipping:
                 ShippingAddress.objects.create(
@@ -120,9 +122,10 @@ class SerwMedStore:
                 send_mail("Django Order - name:  " + customer.name + ", email: " + customer.email + ", tytuł: złożone zamówienie",
                           "total: " + str(total) + ", transaction_id: " + str(transaction_id) + ", payment: " + order.payment +
                           ", address: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) +
-                          ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']),
+                          ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']) +
+                          ", lista produktów: " + itemsStr,
                           'piotrek24061988@gmail.com',
-                          ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com'], fail_silently=True)
+                          ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com', customer.email], fail_silently=True)
                 messages.success(request, 'Twoje zamówienie zostało złożone')
         else:
             print('User is not logged in')
