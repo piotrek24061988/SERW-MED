@@ -379,3 +379,7 @@ input[type='file']:hover
     padding: 5px;
     display: inline-block;
 }
+
+.hidden {
+    display: none;
+}
