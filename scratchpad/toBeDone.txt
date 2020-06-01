@@ -5,6 +5,5 @@ https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDT
 https://codewithsteps.herokuapp.com/part/2ab3a925-1cae-4761-8ed0-a171c2a47be3/
 3)FF YT ui nakrywanie sie poprawic
 4)Skroll button w nawigacji po sklepie
-5)Uzytkownik ja ma profil ale nie ma konta w sklepie "customer" to po wejsciu do zakladki sklepu aplikacja sie wywala
-7)usunac customera
+5)UI przy rescalingu sie rozjezdza
 

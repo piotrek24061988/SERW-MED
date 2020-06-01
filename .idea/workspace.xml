@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad/toBeDone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/toBeDone.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,13 +12,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/store/tests/tests_models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/users/templates/password_reset.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/store/templates/cart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/store/templates/store.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/store/templates/checkout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/users/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -102,7 +162,6 @@
         <option value="$PROJECT_DIR$/serw_med/serw_med/urls.py" />
         <option value="$PROJECT_DIR$/serw_med/users/signals.py" />
         <option value="$PROJECT_DIR$/serw_med/news/static/tokenCSRF.js" />
-        <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/serw_med/store/admin.py" />
         <option value="$PROJECT_DIR$/serw_med/users/tests/tests_views.py" />
@@ -119,6 +178,7 @@
         <option value="$PROJECT_DIR$/serw_med/news/static/checkout.js" />
         <option value="$PROJECT_DIR$/serw_med/news/static/store.js" />
         <option value="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" />
+        <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
       </list>
     </option>
   </component>
@@ -149,6 +209,11 @@
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="scratchpad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,7 +226,28 @@
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,6 +303,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8478664" visible="true" weight="0.23333333" />
       <window_info id="Structure" order="1" sideWeight="0.15213358" side_tool="true" visible="true" weight="0.23333333" />
@@ -384,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -532,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/store/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="66" selection-start-line="66" selection-end-line="67" />
+        <state relative-caret-position="75">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -547,9 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/store/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/tests.py" />
     <entry file="file://$PROJECT_DIR$/serw_med/news/static/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -573,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/store/templates/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="97" column="68" selection-start-line="97" selection-start-column="68" selection-end-line="97" selection-end-column="68" />
+        <state relative-caret-position="83">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
