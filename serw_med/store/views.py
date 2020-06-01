@@ -1,8 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.contrib import messages
-from django.conf import settings
 import json
 import datetime
 from .models import *
@@ -16,8 +15,7 @@ class SerwMedStore:
     @staticmethod
     def store(request):
         if request.user.is_authenticated:
-            customer = request.user
-            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            order, created = Order.objects.get_or_create(customer=request.user, complete=False)
             items = order.orderitem_set.all()
             cartItems = order.get_cart_items
         else:
@@ -31,8 +29,6 @@ class SerwMedStore:
     @staticmethod
     def cart(request):
         if request.user.is_authenticated:
-            user = request.user
-            #customer = settings.AUTH_USER_MODEL
             order, created = Order.objects.get_or_create(customer=request.user, complete=False)
             items = order.orderitem_set.all()
         else:
@@ -55,30 +51,30 @@ class SerwMedStore:
 
     @staticmethod
     def updateItem(request):
-        if not request.user.is_authenticated:
-            return JsonResponse('Item not added for not authenticated user', safe=False)
+        if request.user.is_authenticated:
+            data = json.loads(request.body)
+            productId = data['productId']
+            action = data['action']
 
-        data = json.loads(request.body)
-        productId = data['productId']
-        action = data['action']
+            customer = request.user
+            product = Product.objects.get(id=productId)
 
-        customer = request.user
-        product = Product.objects.get(id=productId)
+            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+            if action == 'add':
+                orderItem.quantity = (orderItem.quantity+1)
+            elif action == 'remove':
+                orderItem.quantity = (orderItem.quantity-1)
 
-        if action == 'add':
-            orderItem.quantity = (orderItem.quantity+1)
-        elif action == 'remove':
-            orderItem.quantity = (orderItem.quantity-1)
+            orderItem.save()
 
-        orderItem.save()
+            if orderItem.quantity <= 0:
+                orderItem.delete()
 
-        if orderItem.quantity <= 0:
-            orderItem.delete()
-
-        return JsonResponse('Item was added', safe=False)
+            return JsonResponse('Item was added', safe=False)
+        else:
+            return JsonResponse('User unauthenticated', safe=False)
 
     @staticmethod
     def processOrder(request):
@@ -122,6 +118,6 @@ class SerwMedStore:
                 emails = Emails(name=customer.username, email=customer.email, title=emailTitle, content=emailContent)
                 emails.save()
                 messages.success(request, 'Twoje zamówienie zostało złożone')
+                return JsonResponse('Payment complete', safe=False)
         else:
-            print('User is not logged in')
-        return JsonResponse('Payment complete', safe=False)
+            return JsonResponse('User unauthenticated', safe=False)

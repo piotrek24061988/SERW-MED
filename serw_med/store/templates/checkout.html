@@ -87,12 +87,14 @@
           </div>
     </div>
 
+    <script type="text/javascript" src="{% static 'tokenCSRF.js' %}"></script>
+
     <script type="text/javascript">
         var redirectToStore = {% url 'serw-med-store' %}
         var cartTotal = '{{ order.get_cart_total }}'
+        var orderShipping = '{{ order.shipping }}'
+        var requestUser = '{{ request.user }}'
     </script>
-    <script type="text/javascript" src="{% static 'tokenCSRF.js' %}"></script>
-    <script type="text/javascript" src="{% static 'checkout.js' %}">
-    </script>
+    <script type="text/javascript" src="{% static 'checkout.js' %}"></script>
 
 {% endblock %}

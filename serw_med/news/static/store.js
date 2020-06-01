@@ -1,18 +1,15 @@
-var user = '{{ request.user }}'
+var user = requestUser
 var updateBtns = document.getElementsByClassName('update-cart')
 
 for(i = 0; i < updateBtns.length; i++) {
     updateBtns[i].addEventListener('click', function(){
         var productId = this.dataset.product
         var action = this.dataset.action
-        console.log('productId: ', productId, 'action: ', action)
-
-        console.log('user: ', user)
 
         if(user == 'AnonymousUser') {
-            console.log('not logged in')
+            console.log('user unauthenticated - no onclick event')
         } else {
-            console.log('logged in')
+            console.log('user authenticated - calling updateUserItem')
             updateUserItem(productId, action)
         }
     })
@@ -21,9 +18,7 @@ for(i = 0; i < updateBtns.length; i++) {
 function updateUserItem(productId, action) {
     console.log('updateUserItem(productId, action):', productId, action)
 
-    var url = '/update-item/'
-
-    fetch(url, {
+    fetch('/update-item/', {
         method:'POST',
         headers:{
             'Content-Type':'application/json',
@@ -37,7 +32,6 @@ function updateUserItem(productId, action) {
     })
 
     .then((data) => {
-        console.log('data: ', data)
         location.reload()
     })
 }

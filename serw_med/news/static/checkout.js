@@ -1,7 +1,8 @@
 var redirectUrl = redirectToStore
 var total = cartTotal
-var shipping = '{{ order.shipping }}'
-var user = '{{ request.user }}'
+var shipping = orderShipping
+var user = requestUser
+
 
 if(shipping == 'False') {
     document.getElementById('shipping-info').innerHTML = ''
