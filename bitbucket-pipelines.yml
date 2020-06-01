@@ -22,11 +22,4 @@ pipelines:
           - python manage.py migrate
           - coverage run --omit=manage.py manage.py test news.tests users.tests store.tests
           - coverage report
-          
-          - pipe: atlassian/email-notify:0.3.11
-            variables:
-                USERNAME: 'piotrek24061988@gmail.com'
-                PASSWORD: $PASSWORD
-                FROM: 'piotrek24061988@gmail.com'
-                TO: 'piotrek24061988@gmail.com'
-                HOST: 'smtp.gmail.com'
+          - repo:commit_status_updated payload
