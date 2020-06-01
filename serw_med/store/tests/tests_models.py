@@ -37,7 +37,7 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_product_str(self):
         # Setup
-        productName = 'ExampleTestProduct2'
+        productName = 'ExampleTestProduct1'
         testPrice = 11.22
         testProduct = None
         # Run
@@ -51,7 +51,7 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_order(self):
         # Setup
-        testUsername = 'UsersTestCustomer3'
+        testUsername = 'StoreTestCustomer1'
         testUser = None
         testOrder = None
         testProduct = None
@@ -74,8 +74,8 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_order_item(self):
         # Setup
-        testUsername = 'UsersTestCustomer4'
-        productName = 'ExampleTestProductOrder1'
+        testUsername = 'StoreTestCustomer2'
+        productName = 'ExampleTestProduct2'
         testPrice = 11.22
         testUser = None
         testOrder = None
@@ -118,7 +118,7 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_shipping_address(self):
         # Setup
-        testUsername = 'UsersTestCustomer5'
+        testUsername = 'StoreTestCustomer3'
         testAddress = 'Grobla 8/10'
         testZipcode = '85-305'
         testNumber = '537240688'
@@ -126,6 +126,7 @@ class StoreModelsTestCases(unittest.TestCase):
         testUser = None
         testOrder = None
         testShipping = None
+        simpleCase = False
         # Run
         if not User.objects.filter(username=testUsername).exists():
             testUser = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
@@ -138,9 +139,9 @@ class StoreModelsTestCases(unittest.TestCase):
         if not models.Order.objects.filter(customer=testUser).exists():
             testOrder = models.Order(customer=testUser)
         else:
-            #try:
-            #    testOrder = models.Order.objects.get(customer=testCustomer)
-            #except MultipleObjectsReturned:
+            try:
+                testOrder = models.Order.objects.get(customer=testUser)
+            except MultipleObjectsReturned:
                 testOrder = models.Order.objects.filter(customer=testUser).first()
         # Check
         self.assertEqual(testOrder.customer, testUser)
@@ -151,22 +152,15 @@ class StoreModelsTestCases(unittest.TestCase):
         else:
             try:
                 testShipping = models.ShippingAddress.objects.get(customer=testUser)
-                self.assertEqual(testShipping.customer, testUser)
-                self.assertEqual(testShipping.order, testOrder)
-                # self.assertEqual(testShipping.address, testAddress)
-                # self.assertEqual(testShipping.city, testCity)
-                # self.assertEqual(testShipping.zipcode, testZipcode)
-                # self.assertEqual(testShipping.number, testNumber)
-                # self.assertEqual(testShipping.__str__(), testAddress)
             except MultipleObjectsReturned:
                 testShipping = models.ShippingAddress.objects.filter(customer=testUser).first()
-                self.assertEqual(testShipping.customer, testUser)
-                self.assertEqual(testShipping.order, testOrder)
+                simpleCase = True
         # Check
-        #self.assertEqual(testShipping.customer, testCustomer)
-        #self.assertEqual(testShipping.order, testOrder)
-        #self.assertEqual(testShipping.address, testAddress)
-        #self.assertEqual(testShipping.city, testCity)
-        #self.assertEqual(testShipping.zipcode, testZipcode)
-        #self.assertEqual(testShipping.number, testNumber)
-        #self.assertEqual(testShipping.__str__(), testAddress)
+        self.assertEqual(testShipping.customer, testUser)
+        self.assertEqual(testShipping.order, testOrder)
+        if not simpleCase:
+            self.assertEqual(testShipping.address, testAddress)
+            self.assertEqual(testShipping.city, testCity)
+            self.assertEqual(testShipping.zipcode, testZipcode)
+            self.assertEqual(testShipping.number, testNumber)
+            self.assertEqual(testShipping.__str__(), testAddress)
