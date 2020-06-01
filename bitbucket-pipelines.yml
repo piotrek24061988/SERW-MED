@@ -1,0 +1,24 @@
+# This is a sample build configuration for Python.
+# Check our guides at https://confluence.atlassian.com/x/x4UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: python:3.7.3
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - pip
+        script:
+          - pip install django
+          - pip install coverage==3.6
+          - pip install django-crispy-forms
+          - pip install Pillow
+          - pip install whitenoise
+          - pip install django-heroku
+          - cd serw_med
+          - python manage.py makemigrations
+          - python manage.py migrate
+          - coverage run --omit=manage.py manage.py test news.tests users.tests store.tests
+          - coverage report
