@@ -22,4 +22,3 @@ pipelines:
           - python manage.py migrate
           - coverage run --omit=manage.py manage.py test news.tests users.tests store.tests
           - coverage report
-          - repo:commit_status_updated payload
