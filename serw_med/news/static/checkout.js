@@ -2,6 +2,7 @@ var redirectUrl = redirectToStore
 var total = cartTotal
 var shipping = orderShipping
 var user = requestUser
+var form = document.getElementById('form')
 
 
 if(shipping == 'False') {
@@ -16,8 +17,6 @@ if(shipping == 'False' && user != 'AnonymousUser') {
     document.getElementById('form-wrapper').classList.add('hidden')
     document.getElementById('payment-info').classList.remove('hidden')
 }
-
-var form = document.getElementById('form')
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -35,6 +34,7 @@ document.getElementById('make-order').addEventListener('click', function(e){
 })
 
 function paymentButton(payment) {
+    console.log('paymentButton(payment):', payment)
 
     var userFormData = {
         'name': null,
@@ -62,9 +62,7 @@ function paymentButton(payment) {
         userFormData.email = form.email.value
     }
 
-    var url = '/process-order/'
-
-    fetch(url, {
+    fetch('/process-order/', {
         method:'POST',
         headers:{
             'Content-Type':'application/json',

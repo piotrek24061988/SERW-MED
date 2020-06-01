@@ -160,7 +160,7 @@ class StoreModelsTestCases(unittest.TestCase):
                 # self.assertEqual(testShipping.__str__(), testAddress)
             except MultipleObjectsReturned:
                 testShipping = models.ShippingAddress.objects.filter(customer=testUser).first()
-                self.assertEqual(testShipping.customer, testCustomer)
+                self.assertEqual(testShipping.customer, testUser)
                 self.assertEqual(testShipping.order, testOrder)
         # Check
         #self.assertEqual(testShipping.customer, testCustomer)

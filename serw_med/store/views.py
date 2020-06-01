@@ -16,10 +16,8 @@ class SerwMedStore:
     def store(request):
         if request.user.is_authenticated:
             order, created = Order.objects.get_or_create(customer=request.user, complete=False)
-            items = order.orderitem_set.all()
             cartItems = order.get_cart_items
         else:
-            items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
             cartItems = order['get_cart_items']
 
@@ -72,7 +70,7 @@ class SerwMedStore:
             if orderItem.quantity <= 0:
                 orderItem.delete()
 
-            return JsonResponse('Item was added', safe=False)
+            return JsonResponse('Item added', safe=False)
         else:
             return JsonResponse('User unauthenticated', safe=False)
 
@@ -92,11 +90,6 @@ class SerwMedStore:
                 order.complete = True
             order.save()
 
-            items = order.orderitem_set.all()
-            itemsStr = ''
-            for item in items:
-                itemsStr = itemsStr + 'produkt: ' + str(item.product.name) + ', ilość: ' + str(item.quantity) + ', cena łączna: ' + str(item.get_total) + ', '
-
             if order.shipping:
                 ShippingAddress.objects.create(
                     customer=customer,
@@ -107,10 +100,17 @@ class SerwMedStore:
                     number=data['userShippingInfo']['telefon']
                 )
 
+            # sending email on successful order
             if order.complete:
+                items = order.orderitem_set.all()
+                itemsStr = ''
+                for item in items:
+                    itemsStr = itemsStr + 'produkt: ' + str(item.product.name) + ', ilość: ' + str(
+                        item.quantity) + ', cena łączna: ' + str(item.get_total) + ', '
+
                 emailTitle = "Django Order - name:  " + customer.username + ", email: " + customer.email + ", tytuł: złożone zamówienie"
                 emailContent = "total: " + str(total) + ", transaction_id: " + str(transaction_id) + ", payment: " + order.payment + \
-                          ", address: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) + \
+                          ", adres: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) + \
                           ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']) + \
                           ", lista produktów: " + itemsStr
                 send_mail(emailTitle, emailContent, 'piotrek24061988@gmail.com',
@@ -118,6 +118,7 @@ class SerwMedStore:
                 emails = Emails(name=customer.username, email=customer.email, title=emailTitle, content=emailContent)
                 emails.save()
                 messages.success(request, 'Twoje zamówienie zostało złożone')
-                return JsonResponse('Payment complete', safe=False)
+
+                return JsonResponse('Payment completed', safe=False)
         else:
             return JsonResponse('User unauthenticated', safe=False)
