@@ -1,5 +1,3 @@
-
-
 class RequestStub:
     class USER:
         @staticmethod
@@ -33,8 +31,6 @@ class RequestStub:
                 private_fields = ''
                 many_to_many = ''
                 fields = ''
-
-        customer = None
 
     META = {'CSRF_COOKIE': []}
     user = USER

@@ -1,11 +1,13 @@
+from django.test.client import RequestFactory
+from django.contrib.auth.models import AnonymousUser
 import unittest
 from .. import views
-from common import stubs
 
 
 class StoreViewsTestCases(unittest.TestCase):
     # Common setup
-    request = stubs.RequestStub
+    request = RequestFactory()
+    request.user = AnonymousUser()
     response_status = 200
 
     def test_store(self):

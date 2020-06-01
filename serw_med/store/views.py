@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.conf import settings
 import json
 import datetime
 from .models import *
@@ -15,15 +16,10 @@ class SerwMedStore:
     @staticmethod
     def store(request):
         if request.user.is_authenticated:
-            if request.user.customer: #hasattr(request.user, 'customers') and
-                customer = request.user.customer
-                order, created = Order.objects.get_or_create(customer=customer, complete=False)
-                items = order.orderitem_set.all()
-                cartItems = order.get_cart_items
-            else:
-                items = []
-                order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
-                cartItems = order['get_cart_items']
+            customer = request.user
+            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            items = order.orderitem_set.all()
+            cartItems = order.get_cart_items
         else:
             items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
@@ -35,13 +31,10 @@ class SerwMedStore:
     @staticmethod
     def cart(request):
         if request.user.is_authenticated:
-            if request.user.customer: #hasattr(request.user, 'customers') and
-                customer = request.user.customer
-                order, created = Order.objects.get_or_create(customer=customer, complete=False)
-                items = order.orderitem_set.all()
-            else:
-                items = []
-                order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
+            user = request.user
+            #customer = settings.AUTH_USER_MODEL
+            order, created = Order.objects.get_or_create(customer=request.user, complete=False)
+            items = order.orderitem_set.all()
         else:
             items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
@@ -51,13 +44,9 @@ class SerwMedStore:
     @staticmethod
     def checkout(request):
         if request.user.is_authenticated:
-            if request.user.customer: #hasattr(request.user, 'customers') and
-                customer = request.user.customer
-                order, created = Order.objects.get_or_create(customer=customer, complete=False)
-                items = order.orderitem_set.all()
-            else:
-                items = []
-                order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
+            customer = request.user
+            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            items = order.orderitem_set.all()
         else:
             items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
@@ -66,11 +55,14 @@ class SerwMedStore:
 
     @staticmethod
     def updateItem(request):
+        if not request.user.is_authenticated:
+            return JsonResponse('Item not added for not authenticated user', safe=False)
+
         data = json.loads(request.body)
         productId = data['productId']
         action = data['action']
 
-        customer = request.user.customer
+        customer = request.user
         product = Product.objects.get(id=productId)
 
         order, created = Order.objects.get_or_create(customer=customer, complete=False)
@@ -94,7 +86,7 @@ class SerwMedStore:
         data = json.loads(request.body)
 
         if request.user.is_authenticated:
-            customer = request.user.customer
+            customer = request.user
             order, created = Order.objects.get_or_create(customer=customer, complete=False)
             total = float(data['userFormData']['total'])
             order.transaction_id = transaction_id
@@ -120,14 +112,14 @@ class SerwMedStore:
                 )
 
             if order.complete:
-                emailTitle = "Django Order - name:  " + customer.name + ", email: " + customer.email + ", tytuł: złożone zamówienie"
+                emailTitle = "Django Order - name:  " + customer.username + ", email: " + customer.email + ", tytuł: złożone zamówienie"
                 emailContent = "total: " + str(total) + ", transaction_id: " + str(transaction_id) + ", payment: " + order.payment + \
                           ", address: " + str(data['userShippingInfo']['adres']) + ", miasto: " + str(data['userShippingInfo']['miasto']) + \
                           ", kod: " + str(data['userShippingInfo']['kod']) + ", telefon: " + str(data['userShippingInfo']['telefon']) + \
                           ", lista produktów: " + itemsStr
                 send_mail(emailTitle, emailContent, 'piotrek24061988@gmail.com',
                           ['piotrek24061988@gmail.com', 'wieslawagorecka1953@gmail.com', customer.email], fail_silently=True)
-                emails = Emails(name=customer.name, email=customer.email, title=emailTitle, content=emailContent)
+                emails = Emails(name=customer.username, email=customer.email, title=emailTitle, content=emailContent)
                 emails.save()
                 messages.success(request, 'Twoje zamówienie zostało złożone')
         else:
