@@ -1,0 +1,19 @@
+
+
+
+                          6) pythonanywhere                              -- 7) website
+                         /   https://www.pythonanywhere.com/user/serwmed       https://serwmed.pythonanywhere.com
+                        /
+                      2) github                                      -- 3) circleci                                                        -- 4) heroku                                     -- 5) website
+                     /   https://github.com/piotrek24061988/SERW-MED    https://app.circleci.com/pipelines/github/piotrek24061988/SERW-MED       https://dashboard.heroku.com/apps/serw-med    https://serw-med.herokuapp.com
+                  origin
+                   /
+1) ubuntu localhost
+                   \
+                  bitbucket
+                     \
+                      8) bitbucket                                      -- 9) pipelines
+                       \ https://bitbucket.org/piotrek24061988/serw-med       https://bitbucket.org/piotrek24061988/serw-med/addon/pipelines/home
+                        \
+                         6) pythonanywhere                              -- 7) website
+                            https://www.pythonanywhere.com/user/serwmed       https://serwmed.pythonanywhere.com
