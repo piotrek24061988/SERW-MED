@@ -58,7 +58,7 @@ function paymentButton(payment) {
     }
 
     if(user == 'AnonymousUser') {
-        userFormData.name = form.name.value
+        userFormData.name = form.login.value
         userFormData.email = form.email.value
     }
 
@@ -76,6 +76,9 @@ function paymentButton(payment) {
     })
 
     .then((data) => {
+        cart = {}
+        document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+
         window.location.href = redirectUrl
     })
 }
