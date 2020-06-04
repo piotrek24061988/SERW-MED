@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/static/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/store/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/store/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad/links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/links.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/static/checkout.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -110,18 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/store/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -175,7 +168,6 @@
         <option value="$PROJECT_DIR$/serw_med/news/templates/news_delete.html" />
         <option value="$PROJECT_DIR$/../SERW-MED3/serw_med/news/static/main.css" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/contact.html" />
-        <option value="$PROJECT_DIR$/scratchpad/links.txt" />
         <option value="$PROJECT_DIR$/serw_med/users/forms.py" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/profile.html" />
         <option value="$PROJECT_DIR$/serw_med/news/static/jquery.scrollUpButton.js" />
@@ -218,6 +210,7 @@
         <option value="$PROJECT_DIR$/serw_med/store/templates/checkout.html" />
         <option value="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" />
         <option value="$PROJECT_DIR$/serw_med/news/static/checkout.js" />
+        <option value="$PROJECT_DIR$/scratchpad/links.txt" />
       </list>
     </option>
   </component>
@@ -365,7 +358,7 @@
     <frame x="67" y="25" width="1853" height="925" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84352076" visible="true" weight="0.22021858" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84352076" visible="true" weight="0.22021858" />
       <window_info id="Structure" order="1" sideWeight="0.15647922" side_tool="true" visible="true" weight="0.22021858" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,7 +369,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4861809" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4861809" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -535,9 +528,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/pythoneverywhereHowTo.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/templates/password_reset.html">
@@ -770,6 +760,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
         </state>
       </provider>
     </entry>
