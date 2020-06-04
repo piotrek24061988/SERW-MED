@@ -38,7 +38,7 @@ class StoreModelsTestCases(unittest.TestCase):
     def test_product_str(self):
         # Setup
         productName = 'ExampleTestProduct1'
-        testPrice = 11.22
+        testPrice = 00.01
         testProduct = None
         # Run
         if not models.Product.objects.filter(name=productName).exists():

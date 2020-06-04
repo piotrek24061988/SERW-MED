@@ -383,3 +383,23 @@ input[type='file']:hover
 .hidden {
     display: none;
 }
+
+@media screen and (max-width: 400px) {
+    #paypal-button-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index:0;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #paypal-button-container {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index:0;
+    }
+}

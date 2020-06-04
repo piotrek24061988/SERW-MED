@@ -54,7 +54,7 @@
                       <input id="make-order" value="Potwierdż" class="btn btn-outline-info m-1">
 
                       <p class="mt-5">2) PayPal</p>
-                      <input id="make-payment" value="Zapłać" class="btn btn-outline-info m-1">
+                      <div id="paypal-button-container"></div>
                   </div>
               </div>
 
@@ -66,7 +66,7 @@
                           {% for item in items %}
                           <tr>
                               <th>
-                                  <a href="#"><!--id="storelink5"-->
+                                  <a href="#">
                                     <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 35px; height: auto;">
                                   </a>
                               </th>
@@ -97,5 +97,12 @@
         var requestUser = '{{ request.user }}'
     </script>
     <script type="text/javascript" src="{% static 'checkout.js' %}"></script>
+
+    <!-- PayPal payment -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AV6Dxvymcx8rVAfvUz331H21bQzUFK1ued_3RA6VeJ2S066t9SRCEF-Pje-8nsZRxahTCKiAkmT-Vm4V&currency=PLN&disable-funding=credit,card&locale=pl_PL"></script>
+    <script type="text/javascript">
+        var cartTotal = '{{ order.get_cart_total }}'
+    </script>
+    <script type="text/javascript" src="{% static 'paypal.js' %}"></script>
 
 {% endblock %}
