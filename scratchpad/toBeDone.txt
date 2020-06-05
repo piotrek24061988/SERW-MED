@@ -1,9 +1,6 @@
 1) Obslugiwanie błędnych url dodać - news/urls.py
 2) Hasła ukryć lepiej
-3) Budowa sklepu
-https://www.youtube.com/watch?v=_ELCMngbM0E&list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng&index=2
-https://codewithsteps.herokuapp.com/part/2ab3a925-1cae-4761-8ed0-a171c2a47be3/
-3)FF YT ui nakrywanie sie poprawic
-4)Skroll button w nawigacji po sklepie
-5)UI przy rescalingu sie rozjezdza
+3) FF YT ui nakrywanie sie poprawic
+4) Dodatkowe opcje płatnicze w sklepie
+
 

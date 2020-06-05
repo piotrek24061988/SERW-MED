@@ -7,11 +7,12 @@
           <header>
                <h3 class="text-center">sklep</h3>
           </header>
+          <a href="#" class="scrollup"></a>
 
           <div class="row">
 
                {% for product in products %}
-               <div class="col-md-4 mb-3">
+               <div class="col-md-4 mb-5">
                     <figure class="border text-center rounded bg-light">
                          <a href="#" id="storelink1">
                               <img src="{{ product.imageURL }}" class="img-fluid float-left my-1 p-1"><!--src="/media/store/placeholder.png"-->
@@ -33,6 +34,8 @@
      <script type="text/javascript">
          var requestUser = '{{ request.user }}'
      </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="{% static 'jquery.scrollTo.min.js' %}"></script>
      <script type="text/javascript" src="{% static 'store.js' %}"></script>
 
 {% endblock %}

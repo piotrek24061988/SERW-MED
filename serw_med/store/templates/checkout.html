@@ -7,6 +7,7 @@
           <header>
                <h3 class="text-center">potwierdzenie zamówienia</h3>
           </header>
+          <a href="#" class="scrollup"></a>
 
           <div class="row">
               <div class="col-md-6">
@@ -70,16 +71,16 @@
                                     <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 35px; height: auto;">
                                   </a>
                               </th>
-                              <th><h5>{{ item.product.name }}</h5></th>
-                              <th><h5>{{ item.quantity }}</h5></th>
-                              <th><h5>{{ item.get_total }} zł</h5></th>
+                              <th><h6>{{ item.product.name }}</h6></th>
+                              <th><h6>{{ item.quantity }}</h6></th>
+                              <th><h6>{{ item.get_total }} zł</h6></th>
                           </tr>
                           {% endfor %}
                           <tr>
                               <th></th>
-                              <th><h5>Produkty: <strong>{{ order.get_cart_items }}</strong></h5></th>
+                              <th><h6>Produkty: {{ order.get_cart_items }}</h6></th>
                               <th></th>
-                              <th><h5>Kwota: <strong>{{ order.get_cart_total }} zł</strong></h5></th>
+                              <th><h6>Kwota: {{ order.get_cart_total }} zł</h6></th>
                           </tr>
                       </table>
                   </div>
@@ -96,6 +97,8 @@
         var orderShipping = '{{ order.shipping }}'
         var requestUser = '{{ request.user }}'
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{% static 'jquery.scrollTo.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'checkout.js' %}"></script>
 
     <!-- PayPal payment -->
