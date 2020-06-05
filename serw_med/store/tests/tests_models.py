@@ -37,7 +37,7 @@ class StoreModelsTestCases(unittest.TestCase):
 
     def test_product_str(self):
         # Setup
-        productName = 'ExampleTestProduct1'
+        productName = 'Example Test Product 1'
         testPrice = 00.01
         testProduct = None
         # Run
@@ -75,7 +75,7 @@ class StoreModelsTestCases(unittest.TestCase):
     def test_order_item(self):
         # Setup
         testUsername = 'StoreTestCustomer2'
-        productName = 'ExampleTestProduct2'
+        productName = 'Example Test Product 2'
         testPrice = 11.22
         testUser = None
         testOrder = None

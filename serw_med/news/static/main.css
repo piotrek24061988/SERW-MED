@@ -359,13 +359,13 @@ input[type='file']:hover
 
 .store-quant {
     display: inline-block;
-    max-width: 35px;
+    max-width: 25px;
     height: auto;
 }
 
 .store-quant-img {
     display: inline-block;
-    max-width: 35px;
+    max-width: 25px;
     height: auto;
     transition: all 0.5s ease-in-out;
 }

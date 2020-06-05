@@ -5,7 +5,7 @@
 
      <div class="container">
           <header>
-               <h3 class="text-center">lista zakupów w przygotowaniu</h3>
+               <h3 class="text-center">lista zakupów</h3>
           </header>
 
           <div class="row">
@@ -15,11 +15,11 @@
                       <table class="table">
                           <tr>
                               <th></th>
-                              <th><h5>Produkt:</h5></th>
-                              <th><h5>Cena:</h5></th>
-                              <th><h5>Ilość:</h5>
+                              <th><h6>Produkt:</h6></th>
+                              <th><h6>Cena:</h6></th>
+                              <th><h6>Ilość:</h6>
                               </th>
-                              <th><h5><strong>Cena łączna:</strong></h5></th>
+                              <th><h6>Cena łączna:</h6></th>
                           </tr>
 
                           {% for item in items %}
@@ -29,27 +29,27 @@
                                     <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 50px; height: auto;">
                                   </a>
                               </th>
-                              <th><h5>{{ item.product.name }}</h5></th>
-                              <th><h5>{{ item.product.price|floatformat:2 }}zł</h5></th>
+                              <th><h6>{{ item.product.name }}</h6></th>
+                              <th><h6>{{ item.product.price|floatformat:2 }}zł</h6></th>
                               <th>
                                   <img class="store-quant-img update-cart" data-product="{{ item.product.id }}" data-action="remove" src="/media/gallery/prev2.png">
-                                  <h5 class="store-quant">{{ item.quantity }}</h5>
+                                  <h6 class="store-quant">{{ item.quantity }}</h6>
                                   <img class="store-quant-img update-cart" data-product="{{ item.product.id }}" data-action="add" src="/media/gallery/next2.png">
                               </th>
-                              <th><h5><strong>{{ item.get_total }} zł</strong></h5></th>
+                              <th><h6>{{ item.get_total }} zł</h6></th>
                           </tr>
                           {% endfor %}
                       </table>
                   </div>
 
-                  <div class="border text-center rounded bg-light mb-1">
+                  <div class="border text-center rounded bg-light mb-5">
                       <table class="table">
                           <tr>
                               <th>
                                   <a href="{% url 'serw-med-store' %}"><button class="btn btn-outline-info m-1">Sklep</button></a>
                               </th>
-                              <th><h5>Produkty: <strong>{{ order.get_cart_items }}</strong></h5></th>
-                              <th><h5>Kwota: <strong>{{ order.get_cart_total }} zł</strong></h5></th>
+                              <th><h6>Produkty: {{ order.get_cart_items }}</h6></th>
+                              <th><h6>Kwota: {{ order.get_cart_total }} zł</h6></th>
                               <th>
                                   <a href="{% url 'serw-med-checkout' %}"><button class="btn btn-outline-info m-1">Zamów</button></a>
                               </th>
