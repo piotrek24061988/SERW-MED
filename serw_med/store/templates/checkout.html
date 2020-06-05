@@ -73,14 +73,14 @@
                               </th>
                               <th><h6>{{ item.product.name }}</h6></th>
                               <th><h6>{{ item.quantity }}</h6></th>
-                              <th><h6>{{ item.get_total }} zł</h6></th>
+                              <th><h6>{{ item.get_total|floatformat:2 }} zł</h6></th>
                           </tr>
                           {% endfor %}
                           <tr>
                               <th></th>
                               <th><h6>Produkty: {{ order.get_cart_items }}</h6></th>
                               <th></th>
-                              <th><h6>Kwota: {{ order.get_cart_total }} zł</h6></th>
+                              <th><h6>Kwota: {{ order.get_cart_total|floatformat:2 }} zł</h6></th>
                           </tr>
                       </table>
                   </div>

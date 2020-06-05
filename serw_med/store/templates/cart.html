@@ -37,7 +37,7 @@
                                   <h6 class="store-quant">{{ item.quantity }}</h6>
                                   <img class="store-quant-img update-cart" data-product="{{ item.product.id }}" data-action="add" src="/media/gallery/next2.png">
                               </th>
-                              <th><h6>{{ item.get_total }} zł</h6></th>
+                              <th><h6>{{ item.get_total|floatformat:2 }} zł</h6></th>
                           </tr>
                           {% endfor %}
                       </table>
@@ -50,7 +50,7 @@
                                   <a href="{% url 'serw-med-store' %}"><button class="btn btn-outline-info m-1">Sklep</button></a>
                               </th>
                               <th><h6>Produkty: {{ order.get_cart_items }}</h6></th>
-                              <th><h6>Kwota: {{ order.get_cart_total }} zł</h6></th>
+                              <th><h6>Kwota: {{ order.get_cart_total|floatformat:2 }} zł</h6></th>
                               <th>
                                   <a href="{% url 'serw-med-checkout' %}"><button class="btn btn-outline-info m-1">Zamów</button></a>
                               </th>
