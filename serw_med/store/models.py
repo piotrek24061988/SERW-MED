@@ -9,6 +9,7 @@ class Product(models.Model):
     price = models.FloatField()
     digital = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(default='store/placeholder.png', upload_to='store', storage=storage.OverwriteStorage())
+    description = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name

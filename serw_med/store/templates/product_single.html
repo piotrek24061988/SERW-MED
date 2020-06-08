@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-8">
+         <article class="media content-section mb-5">
+             <figure class="border text-center rounded bg-light">
+                 <img src="{{ object.imageURL }}" class="img-fluid float-left my-1 p-1">
+                 <figcaption class="p-1">{{ object.name }}
+                     <h5 class="float-right mr-2">{{ object.price|floatformat:2 }} zł</h5>
+                 </figcaption>
+                 <h4 class="mt-5 mb-3">Opis produktu:</h4>
+                 <h5>{{ object.description }}</h5>
+             </figure>
+        </article>
+    </div>
+</div>
+
+{% endblock %}

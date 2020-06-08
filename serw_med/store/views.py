@@ -2,10 +2,16 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.views.generic import DetailView
 import json
 import datetime
 from .models import *
 from news.models import Emails
+
+
+class SerwMedStoreProduct(DetailView):
+    model = Product
+    template_name = 'product_single.html'
 
 
 class SerwMedStore:

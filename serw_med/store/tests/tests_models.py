@@ -10,9 +10,12 @@ class StoreModelsTestCases(unittest.TestCase):
         productName = 'Voucher konsultacyjny jednorazowy'
         testPrice = 100
         testProduct = None
+        testDescription = 'Jednorazowy voucher na dowolną doradczą konsultację telefoniczną, ' + \
+                          'zawierającą się w ramach usług oferowanych przez naszą firmę.'
         # Run
         if not models.Product.objects.filter(name=productName).exists():
-            testProduct = models.Product(name=productName, price=testPrice, image='store/voucher.jpg')
+            testProduct = models.Product(name=productName, price=testPrice,
+                                         image='store/voucher.jpg', description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)
@@ -25,9 +28,12 @@ class StoreModelsTestCases(unittest.TestCase):
         productName = 'Abonament konsultacyjny miesięczny'
         testPrice = 500
         testProduct = None
+        testDescription = 'Miesięczny voucher na dowolne doradcze konsultacje telefoniczne, ' + \
+                          'zawierające się w ramach usług oferowanych przez naszą firmę.'
         # Run
         if not models.Product.objects.filter(name=productName).exists():
-            testProduct = models.Product(name=productName, price=testPrice, image='store/abonament.jpg')
+            testProduct = models.Product(name=productName, price=testPrice,
+                                         image='store/abonament.jpg', description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)
@@ -40,9 +46,19 @@ class StoreModelsTestCases(unittest.TestCase):
         productName = 'Example Test Product 1'
         testPrice = 00.01
         testProduct = None
+        testDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '+\
+                          'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. '+\
+                          'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ' +\
+                          'Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, '+\
+                          'dui ligula ultricies purus, sed posuere libero dui id orci. ' +\
+                          'Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, '+\
+                          'vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. '+\
+                          'Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, '+\
+                          'purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. '+\
+                          'Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.'
         # Run
         if not models.Product.objects.filter(name=productName).exists():
-            testProduct = models.Product(name=productName, price=testPrice, digital=True)
+            testProduct = models.Product(name=productName, price=testPrice, digital=True, description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)
@@ -76,6 +92,16 @@ class StoreModelsTestCases(unittest.TestCase):
         # Setup
         testUsername = 'StoreTestCustomer2'
         productName = 'Example Test Product 2'
+        testDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '+\
+                          'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. '+\
+                          'Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. ' +\
+                          'Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, '+\
+                          'dui ligula ultricies purus, sed posuere libero dui id orci. ' +\
+                          'Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, '+\
+                          'vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. '+\
+                          'Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, '+\
+                          'purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. '+\
+                          'Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.'
         testPrice = 11.22
         testUser = None
         testOrder = None
@@ -83,7 +109,7 @@ class StoreModelsTestCases(unittest.TestCase):
         testOrderItem = None
         # Run
         if not models.Product.objects.filter(name=productName).exists():
-            testProduct = models.Product(name=productName, price=testPrice, digital=True)
+            testProduct = models.Product(name=productName, price=testPrice, digital=True, description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)

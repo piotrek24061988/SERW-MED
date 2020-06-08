@@ -14,8 +14,8 @@
                {% for product in products %}
                <div class="col-md-4 mb-5">
                     <figure class="border text-center rounded bg-light">
-                         <a href="#" id="storelink1">
-                              <img src="{{ product.imageURL }}" class="img-fluid float-left my-1 p-1"><!--src="/media/store/placeholder.png"-->
+                         <a href="{% url 'serw-med-product' product.id %}" id="storelink1">
+                              <img src="{{ product.imageURL }}" class="img-fluid float-left my-1 p-1">
                          </a>
                          <figcaption class="p-1">{{ product.name }}
                              <h5 class="float-right mr-2">{{ product.price|floatformat:2 }} zł</h5>
