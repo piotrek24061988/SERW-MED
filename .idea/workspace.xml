@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serw_med/serw_med/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/serw_med/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +14,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
+        <entry file="file://$PROJECT_DIR$/scratchpad/pythoneverywhereHowTo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="332">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/store/templates/store.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="14" selection-start-line="14" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -41,18 +50,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/store/templates/checkout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/store/templates/cart.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
@@ -64,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+            <state>
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -78,13 +75,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedWhite.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/serw_med/store/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-89">
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <folding>
+                <element signature="e#632#664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedBlack.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/serw_med/news/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serw_med/store/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -132,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/serw_med/users/models.py" />
-        <option value="$PROJECT_DIR$/serw_med/users/views.py" />
         <option value="$PROJECT_DIR$/serw_med/users/templates/register.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/news_create.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/news_delete.html" />
@@ -174,7 +198,6 @@
         <option value="$PROJECT_DIR$/scratchpad/toBeDone.txt" />
         <option value="$PROJECT_DIR$/serw_med/store/templates/cart.html" />
         <option value="$PROJECT_DIR$/serw_med/store/views.py" />
-        <option value="$PROJECT_DIR$/serw_med/serw_med/urls.py" />
         <option value="$PROJECT_DIR$/serw_med/store/templates/store.html" />
         <option value="$PROJECT_DIR$/serw_med/store/models.py" />
         <option value="$PROJECT_DIR$/serw_med/store/tests/tests_views.py" />
@@ -183,6 +206,9 @@
         <option value="$PROJECT_DIR$/serw_med/store/templates/checkout.html" />
         <option value="$PROJECT_DIR$/scratchpad/pythoneverywhereHowTo.txt" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
+        <option value="$PROJECT_DIR$/serw_med/news/urls.py" />
+        <option value="$PROJECT_DIR$/serw_med/store/urls.py" />
+        <option value="$PROJECT_DIR$/serw_med/serw_med/urls.py" />
       </list>
     </option>
   </component>
@@ -237,13 +263,13 @@
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -254,23 +280,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/serw_med/store/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/serw_med/store" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/serw_med/store" />
+      <recent name="$PROJECT_DIR$/serw_med/store/templates" />
+      <recent name="$PROJECT_DIR$/serw_med/store/tests" />
+      <recent name="$PROJECT_DIR$/serw_med/news/static" />
+      <recent name="$PROJECT_DIR$/serw_med/media" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/serw_med/static" />
       <recent name="$PROJECT_DIR$/serw_med/store/templates" />
       <recent name="$PROJECT_DIR$/serw_med/media/news_pics" />
       <recent name="$PROJECT_DIR$/serw_med/news/static" />
       <recent name="$PROJECT_DIR$/serw_med/news" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/serw_med/store/templates" />
-      <recent name="$PROJECT_DIR$/serw_med/store/tests" />
-      <recent name="$PROJECT_DIR$/serw_med/news/static" />
-      <recent name="$PROJECT_DIR$/serw_med/media" />
-      <recent name="$PROJECT_DIR$/serw_med/scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -302,7 +328,7 @@
     <frame x="67" y="25" width="1853" height="925" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.812" visible="true" weight="0.14699453" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.812" visible="true" weight="0.14699453" />
       <window_info id="Structure" order="1" sideWeight="0.188" side_tool="true" weight="0.14699453" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -313,7 +339,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.13316584" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28140703" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,12 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/serw_med/static/jquery.scrollUpButtonCooperation.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/static/jquery.scrollUpButtonAbout.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/static/gallerySlideShow.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -532,16 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="32" column="77" lean-forward="true" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/tests/tests_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-235">
@@ -561,27 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/store/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -602,16 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/store/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/store/tests/tests_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -622,24 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/store/templates/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" selection-start-line="14" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -650,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/pythoneverywhereHowTo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -664,10 +626,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
+    <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedBlack.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedWhite.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/templates/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="211">
+          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -678,13 +649,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/store/templates/checkout.html">
+    <entry file="file://$PROJECT_DIR$/serw_med/store/templates/store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+        <state relative-caret-position="197">
+          <caret line="14" selection-start-line="14" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="15" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/pythoneverywhereHowTo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/helpfulCommands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -698,19 +700,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedBlack.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/media/logo/serwmedWhite.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/store/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/serw_med/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
