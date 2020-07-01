@@ -23,7 +23,7 @@
                           {% for item in items %}
                           <tr>
                               <th>
-                                  <a href="#"><!--id="storelink5"-->
+                                  <a href="{% url 'serw-med-product' item.product.id %}">
                                     <img src="{{ item.product.imageURL }}" class="img-fluid text-center" style="max-width: 50px; height: auto;">
                                   </a>
                               </th>
