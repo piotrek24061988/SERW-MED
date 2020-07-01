@@ -16,7 +16,7 @@ class StoreViewsTestCases(unittest.TestCase):
 
     def test_store(self):
         # Setup
-        response_content = b'sklep'
+        response_content = b'Voucher'
         # Run
         response = views.SerwMedStore.store(StoreViewsTestCases.request)
         # Check
@@ -25,7 +25,7 @@ class StoreViewsTestCases(unittest.TestCase):
 
     def test_cart(self):
         # Setup
-        response_content = b'lista'
+        response_content = b'Produkty'
         # Run
         response = views.SerwMedStore.cart(StoreViewsTestCases.request)
         # Check
@@ -34,7 +34,7 @@ class StoreViewsTestCases(unittest.TestCase):
 
     def test_checkout(self):
         # Setup
-        response_content = b'potwierdzenie'
+        response_content = b'Podsumowanie'
         # Run
         response = views.SerwMedStore.checkout(StoreViewsTestCases.request)
         # Check
