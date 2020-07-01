@@ -2,5 +2,4 @@
 2) Hasła ukryć lepiej
 3) FF YT ui nakrywanie sie poprawic
 4) Dodatkowe opcje płatnicze w sklepie
-
-
+5) Stworzyc plik konfiguracyjny w common z konfiguracjami typu adresy emailowe firmy itp zeby nie były zduplikowane
