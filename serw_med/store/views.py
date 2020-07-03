@@ -19,6 +19,37 @@ class SerwMedStore:
         pass
 
     @staticmethod
+    def processCookies(request, items, order, createOrderItem):
+        try:
+            cart = json.loads(request.COOKIES['cart'])
+
+            for i in cart:
+                product = Product.objects.get(id=i)
+                total = (product.price * cart[i]["quantity"])
+                if not createOrderItem:
+                    order['get_cart_total'] += total
+                    order['get_cart_items'] += cart[i]["quantity"]
+
+                item = {
+                    'product': {
+                        'id': product.id,
+                        'name': product.name,
+                        'price': product.price,
+                        'imageURL': product.imageURL
+                    },
+                    'quantity': cart[i]["quantity"],
+                    'get_total': total
+                }
+                items.append(item)
+                if createOrderItem:
+                    OrderItem.objects.create(product=product, order=order, quantity=cart[i]["quantity"])
+
+                if not product.digital and not createOrderItem:
+                    order['shipping'] = True
+        except:
+            pass
+
+    @staticmethod
     def store(request):
         if request.user.is_authenticated:
             order, created = Order.objects.get_or_create(customer=request.user, complete=False)
@@ -47,31 +78,7 @@ class SerwMedStore:
             items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
 
-            try:
-                cart = json.loads(request.COOKIES['cart'])
-
-                for i in cart:
-                    product = Product.objects.get(id=i)
-                    total = (product.price * cart[i]["quantity"])
-                    order['get_cart_total'] += total
-                    order['get_cart_items'] += cart[i]["quantity"]
-
-                    item = {
-                        'product': {
-                            'id': product.id,
-                            'name': product.name,
-                            'price': product.price,
-                            'imageURL': product.imageURL
-                        },
-                        'quantity': cart[i]["quantity"],
-                        'get_total': total
-                    }
-                    items.append(item)
-
-                    if not product.digital:
-                        order['shipping'] = True
-            except:
-                pass
+            SerwMedStore.processCookies(request, items, order, False)
 
         context = {'items': items, 'order': order}
         return render(request, 'cart.html', context)
@@ -86,31 +93,7 @@ class SerwMedStore:
             items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
 
-            try:
-                cart = json.loads(request.COOKIES['cart'])
-
-                for i in cart:
-                    product = Product.objects.get(id=i)
-                    total = (product.price * cart[i]["quantity"])
-                    order['get_cart_total'] += total
-                    order['get_cart_items'] += cart[i]["quantity"]
-
-                    item = {
-                        'product': {
-                            'id': product.id,
-                            'name': product.name,
-                            'price': product.price,
-                            'imageURL': product.imageURL
-                        },
-                        'quantity': cart[i]["quantity"],
-                        'get_total': total
-                    }
-                    items.append(item)
-
-                    if not product.digital:
-                        order['shipping'] = True
-            except:
-                pass
+            SerwMedStore.processCookies(request, items, order, False)
 
         context = {'items': items, 'order': order}
         return render(request, 'checkout.html', context)
@@ -162,27 +145,7 @@ class SerwMedStore:
             order = Order.objects.create(customer=customer, complete=False)
             items = []
 
-            try:
-                cart = json.loads(request.COOKIES['cart'])
-
-                for i in cart:
-                    product = Product.objects.get(id=i)
-                    total = (product.price * cart[i]["quantity"])
-
-                    item = {
-                        'product': {
-                            'id': product.id,
-                            'name': product.name,
-                            'price': product.price,
-                            'imageURL': product.imageURL
-                        },
-                        'quantity': cart[i]["quantity"],
-                        'get_total': total
-                    }
-                    items.append(item)
-                    OrderItem.objects.create(product=product, order=order, quantity=cart[i]["quantity"])
-            except:
-                pass
+            SerwMedStore.processCookies(request, items, order, True)
 
         total = float(data['userFormData']['total'])
         order.transaction_id = transaction_id
