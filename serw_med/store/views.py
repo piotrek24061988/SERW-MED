@@ -50,53 +50,33 @@ class SerwMedStore:
             pass
 
     @staticmethod
-    def store(request):
+    def prepareContext(request):
         if request.user.is_authenticated:
             order, created = Order.objects.get_or_create(customer=request.user, complete=False)
+            items = order.orderitem_set.all()
             cartItems = order.get_cart_items
         else:
+            items = []
             order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
+
+        SerwMedStore.processCookies(request, items, order, False)
+
+        if not request.user.is_authenticated:
             cartItems = order['get_cart_items']
 
-            try:
-                cart = json.loads(request.COOKIES['cart'])
+        return {'items': items, 'order': order, 'products': Product.objects.all(), 'cartItems': cartItems}
 
-                for i in cart:
-                    cartItems += cart[i]["quantity"]
-            except:
-                    pass
-
-        context = {'products': Product.objects.all(), 'cartItems': cartItems}
-        return render(request, 'store.html', context)
+    @staticmethod
+    def store(request):
+        return render(request, 'store.html', SerwMedStore.prepareContext(request))
 
     @staticmethod
     def cart(request):
-        if request.user.is_authenticated:
-            order, created = Order.objects.get_or_create(customer=request.user, complete=False)
-            items = order.orderitem_set.all()
-        else:
-            items = []
-            order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
-
-            SerwMedStore.processCookies(request, items, order, False)
-
-        context = {'items': items, 'order': order}
-        return render(request, 'cart.html', context)
+        return render(request, 'cart.html', SerwMedStore.prepareContext(request))
 
     @staticmethod
     def checkout(request):
-        if request.user.is_authenticated:
-            customer = request.user
-            order, created = Order.objects.get_or_create(customer=customer, complete=False)
-            items = order.orderitem_set.all()
-        else:
-            items = []
-            order = {'get_cart_total': 0, 'get_cart_items': 0, 'shipping': False}
-
-            SerwMedStore.processCookies(request, items, order, False)
-
-        context = {'items': items, 'order': order}
-        return render(request, 'checkout.html', context)
+        return render(request, 'checkout.html', SerwMedStore.prepareContext(request))
 
     @staticmethod
     def updateItem(request):
@@ -105,10 +85,9 @@ class SerwMedStore:
             productId = data['productId']
             action = data['action']
 
-            customer = request.user
             product = Product.objects.get(id=productId)
 
-            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            order, created = Order.objects.get_or_create(customer=request.user, complete=False)
             orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 
             if action == 'add':
@@ -132,7 +111,7 @@ class SerwMedStore:
 
         if request.user.is_authenticated:
             customer = request.user
-            order, created = Order.objects.get_or_create(customer=customer, complete=False)
+            order, created = Order.objects.get_or_create(customer=request.user, complete=False)
         else:
             newUserName = data['userFormData']['name']
             newUserEmail = data['userFormData']['email']
