@@ -35,24 +35,18 @@ class Order(models.Model):
     @property
     def shipping(self):
         shipping = False
-        orderitems = self.orderitem_set.all()
-        for orderitem in orderitems:
+        for orderitem in self.orderitem_set.all():
             if not orderitem.product.digital:
                 shipping = True
-        print("Current shiping")
         return shipping
 
     @property
     def get_cart_total(self):
-        orderitems = self.orderitem_set.all()
-        total = sum([item.get_total for item in orderitems])
-        return total
+        return sum([item.get_total for item in self.orderitem_set.all()])
 
     @property
     def get_cart_items(self):
-        orderitems = self.orderitem_set.all()
-        total = sum([item.quantity for item in orderitems])
-        return total
+        return sum([item.quantity for item in self.orderitem_set.all()])
 
 
 class OrderItem(models.Model):
@@ -63,8 +57,7 @@ class OrderItem(models.Model):
 
     @property
     def get_total(self):
-        total = self.product.price * self.quantity
-        return total
+        return self.product.price * self.quantity
 
 
 class ShippingAddress(models.Model):
