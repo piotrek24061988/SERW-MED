@@ -1,6 +1,7 @@
 import unittest, json
 from django.contrib.auth.models import User
 from .. import models
+from django.test import Client
 
 
 class NewsModelsTestCases(unittest.TestCase):
@@ -20,6 +21,7 @@ class NewsModelsTestCases(unittest.TestCase):
             testContent = 'News content' + str(i)
             user = None
             news = None
+            client = Client()
             # Run
             if not User.objects.filter(username=testUsername).exists():
                 user = User.objects.create_user(testUsername, testUsername + '@gmail.com', '1234')
@@ -41,6 +43,12 @@ class NewsModelsTestCases(unittest.TestCase):
                 news = models.News.objects.filter(title=testTitle).first()
                 # Check
                 self.assertEqual(testTitle, news.title)
+            # Run
+            url = news.get_absolute_url()
+            response = client.get(url)
+            # Check
+            self.assertEqual(response.status_code, 200)
+            self.assertIn(testContent.encode('ASCII'), response.content)
 
     def test_json_post(self):
         # Setup

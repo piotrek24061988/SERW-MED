@@ -12,16 +12,18 @@ class StoreModelsTestCases(unittest.TestCase):
         testProduct = None
         testDescription = 'Jednorazowy voucher na dowolną doradczą konsultację telefoniczną, ' + \
                           'zawierającą się w ramach usług oferowanych przez naszą firmę.'
+        testUrl = 'store/voucher.jpg'
         # Run
         if not models.Product.objects.filter(name=productName).exists():
             testProduct = models.Product(name=productName, price=testPrice,
-                                         image='store/voucher.jpg', description=testDescription)
+                                         image=testUrl, description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)
         # Check
         self.assertEqual(testProduct.name, productName)
         self.assertEqual(testProduct.price, testPrice)
+        self.assertIn(testUrl, testProduct.imageURL)
 
     def test_second_product(self):
         # Setup
@@ -30,16 +32,18 @@ class StoreModelsTestCases(unittest.TestCase):
         testProduct = None
         testDescription = 'Miesięczny voucher na dowolne doradcze konsultacje telefoniczne, ' + \
                           'zawierające się w ramach usług oferowanych przez naszą firmę.'
+        testUrl = 'store/abonament.jpg'
         # Run
         if not models.Product.objects.filter(name=productName).exists():
             testProduct = models.Product(name=productName, price=testPrice,
-                                         image='store/abonament.jpg', description=testDescription)
+                                         image=testUrl, description=testDescription)
             testProduct.save()
         else:
             testProduct = models.Product.objects.get(name=productName)
         # Check
         self.assertEqual(testProduct.name, productName)
         self.assertEqual(testProduct.price, testPrice)
+        self.assertIn(testUrl, testProduct.imageURL)
 
     def test_product_str(self):
         # Setup
@@ -87,6 +91,9 @@ class StoreModelsTestCases(unittest.TestCase):
         # Check
         self.assertEqual(testOrder.customer, testUser)
         self.assertNotEqual(testOrder.__str__(), None)
+        self.assertEqual(testOrder.get_cart_total, 0)
+        self.assertEqual(testOrder.get_cart_items, 0)
+        self.assertEqual(testOrder.shipping, False)
 
     def test_order_item(self):
         # Setup
@@ -103,6 +110,7 @@ class StoreModelsTestCases(unittest.TestCase):
                           'purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. '+\
                           'Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.'
         testPrice = 11.22
+        testQuantity = 1
         testUser = None
         testOrder = None
         testProduct = None
@@ -133,7 +141,7 @@ class StoreModelsTestCases(unittest.TestCase):
         self.assertEqual(testOrder.customer, testUser)
         # Run
         if not models.OrderItem.objects.filter(product=testProduct).exists():
-            testOrderItem = models.OrderItem(product=testProduct, order=testOrder)
+            testOrderItem = models.OrderItem(product=testProduct, order=testOrder, quantity=testQuantity)
         else:
             try:
                 testOrderItem = models.OrderItem.objects.get(product=testProduct)
@@ -141,6 +149,7 @@ class StoreModelsTestCases(unittest.TestCase):
                 testOrderItem = models.OrderItem.objects.filter(product=testProduct).first()
         # Check
         self.assertEqual(testOrderItem.product, testProduct)
+        self.assertEqual(testOrderItem.get_total, testPrice)
 
     def test_shipping_address(self):
         # Setup
