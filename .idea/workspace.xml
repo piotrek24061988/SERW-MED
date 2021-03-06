@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/tests/tests_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/tests/tests_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/tests/tests_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/tests/tests_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/store/tests/tests_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/store/tests/tests_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/store/tests/tests_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/users/django_tests/tests_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/django_tests/tests_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/users/django_tests/tests_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/django_tests/tests_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/users/tests/tests_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/tests/tests_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/users/tests/tests_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/tests/tests_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/users/tests/tests_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/users/tests/tests_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbucket-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bitbucket-pipelines.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -36,9 +25,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratchpad/workflow.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bitbucket-pipelines.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="22" column="147" selection-start-line="22" selection-start-column="147" selection-end-line="22" selection-end-column="147" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="23" column="147" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="147" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="285">
               <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -99,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/about.html" />
         <option value="$PROJECT_DIR$/serw_med/news/static/cart.js" />
         <option value="$PROJECT_DIR$/serw_med/users/signals.py" />
@@ -150,6 +161,7 @@
         <option value="$PROJECT_DIR$/serw_med/store/tests/tests_urls.py" />
         <option value="$PROJECT_DIR$/serw_med/users/tests/tests_models.py" />
         <option value="$PROJECT_DIR$/serw_med/users/tests/tests_urls.py" />
+        <option value="$PROJECT_DIR$/bitbucket-pipelines.yml" />
       </list>
     </option>
   </component>
@@ -164,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,7 +187,23 @@
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="scratchpad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
               <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
+              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +222,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +285,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.53768843" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5389447" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,16 +339,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/serw_med/store/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/store/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -508,16 +526,6 @@
     <entry file="file://$PROJECT_DIR$/scratchpad/toBeDone.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/workflow.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="128" selection-start-line="23" selection-start-column="128" selection-end-line="23" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -630,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -647,6 +645,33 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/workflow.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="147" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serw_med/users/tests/tests_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbucket-pipelines.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="147" selection-start-line="22" selection-start-column="147" selection-end-line="22" selection-end-column="147" />
         </state>
       </provider>
     </entry>
