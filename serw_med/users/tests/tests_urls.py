@@ -5,7 +5,6 @@ from django.contrib.auth import views as auth_views
 
 
 class NewsUrlsTestCases(unittest.TestCase):
-
     def test_url_register(self):
         # Setup
         url = reverse('serw-med-register')

@@ -1,8 +1,6 @@
 import unittest
 from .. import views
 from common import stubs
-from django.test import TestCase, Client
-from django.urls import reverse
 
 
 class UsersViewsTestCases(unittest.TestCase):

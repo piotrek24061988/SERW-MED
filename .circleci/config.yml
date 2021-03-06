@@ -21,6 +21,6 @@ jobs:
             cd serw_med
             python manage.py makemigrations
             python manage.py migrate
-            coverage run --omit=manage.py manage.py test news.tests users.tests store.tests news.django_tests store.django_tests
+            coverage run --omit=manage.py manage.py test news.tests users.tests store.tests news.django_tests users.django_tests store.django_tests
             coverage report
 destination: tr1
