@@ -1,0 +1,9 @@
+1) for Google
+ https://search.google.com/search-console
+ 
+ generating meta tag google-site-verification with key and adding it to html head of the web site
+
+2) for Bing
+https://www.bing.com/webmasters
+
+  importing sites from google search console
