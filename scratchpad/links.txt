@@ -9,4 +9,6 @@ https://www.toptal.com/designers/subtlepatterns/
 5) PayPal:
 https://developer.paypal.com/demo/checkout/#/pattern/responsive
 https://developer.paypal.com/docs/checkout/reference/customize-sdk/#query-parameters
+6) Site map generator:
+https://www.xml-sitemaps.com/
 

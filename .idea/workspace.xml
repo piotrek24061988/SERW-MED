@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68f31c66-4283-4b38-9f20-d38ecf7448ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serw_med/news/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/serw_med/news/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratchpad/links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scratchpad/links.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serw_med/news/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
@@ -62,6 +62,15 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -142,7 +151,6 @@
         <option value="$PROJECT_DIR$/serw_med/news/static/cookie.js" />
         <option value="$PROJECT_DIR$/scratchpad/helpfulCommands.txt" />
         <option value="$PROJECT_DIR$/serw_med/news/static/paypal.js" />
-        <option value="$PROJECT_DIR$/scratchpad/links.txt" />
         <option value="$PROJECT_DIR$/serw_med/news/static/main.css" />
         <option value="$PROJECT_DIR$/serw_med/news/static/checkout.js" />
         <option value="$PROJECT_DIR$/serw_med/news/static/store.js" />
@@ -181,6 +189,7 @@
         <option value="$PROJECT_DIR$/bitbucket-pipelines.yml" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/about.html" />
         <option value="$PROJECT_DIR$/serw_med/news/templates/base.html" />
+        <option value="$PROJECT_DIR$/scratchpad/links.txt" />
       </list>
     </option>
   </component>
@@ -210,33 +219,7 @@
             <path>
               <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
               <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
-              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
-              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
-              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
-              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SERW-MED" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SERW-MED" type="462c0819:PsiDirectoryNode" />
-              <item name="serw_med" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="scratchpad" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,8 +276,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.812" visible="true" weight="0.38907105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.812" visible="true" weight="0.38907105" />
       <window_info id="Structure" order="1" sideWeight="0.188" side_tool="true" weight="0.14699453" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,7 +289,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4447236" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4447236" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -506,9 +490,6 @@
     <entry file="file://$PROJECT_DIR$/serw_med/store/django_tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/serw_med/news/django_tests/tests_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1559">
@@ -686,6 +667,13 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad/links.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
