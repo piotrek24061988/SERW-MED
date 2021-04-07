@@ -1,5 +1,5 @@
 1) Obslugiwanie błędnych url dodać - news/urls.py
 2) Hasła ukryć lepiej
-3) FF YT ui nakrywanie sie poprawic
+3) FF YT ui nakrywanie sie poprawic na malym oknie
 4) Dodatkowe opcje płatnicze w sklepie
 5) Stworzyc plik konfiguracyjny w common z konfiguracjami typu adresy emailowe firmy itp zeby nie były zduplikowane
