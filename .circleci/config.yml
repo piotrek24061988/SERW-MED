@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circleci-demo-python-django
     docker:
-      - image: circleci/python:3.9.2
+      - image: circleci/python:3.9.3
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
@@ -11,7 +11,7 @@ jobs:
       - run:
           command: |
             pip install django
-            pip install coverage==3.6
+            pip install coverage==3.9
             pip install django-crispy-forms
             pip install Pillow
             pip install whitenoise
